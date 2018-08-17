@@ -1,0 +1,57 @@
+
+.startscreen
+	position: relative
+	display: block
+	height: 100vh
+	min-height: 600px
+	&:after
+		content: ''
+		+coverdiv
+		+g(rgba(0, 0, 0, .2), rgba(0,0,0,0.67))
+		pointer-events: none
+	&__wrap
+		position: relative
+		z-index: 10
+	&__content
+		margin-top: 30px
+		padding-bottom: 80px
+	.layout
+		height: 100%
+	.title__i
+		opacity: .75
+	.title__t
+		margin-bottom: 60px
+
+	&-slider
+		position: absolute
+		bottom: 30px
+		left: 0
+		right: 0
+		display: flex
+		justify-content: space-between
+		padding-top: 35px
+		border-top: 2px solid rgba(255, 255, 255, .2)
+		z-index: 10
+		&__item
+			display: inline-block
+			vertical-align: top
+			width: 31%
+		&__pic
+			position: relative
+			display: inline-block
+			vertical-align: top
+			width: 106px
+			height: 106px
+			border-radius: 100%
+			margin-right: 12px
+			overflow: hidden
+		&__img
+			+vcenter
+			min-width: 100%
+			min-height: 100%
+		&__content
+			display: inline-block
+			vertical-align: top
+			width: calc(100% - 124px)
+
+

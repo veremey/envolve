@@ -1,0 +1,121 @@
+
+.header
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 40px 0
+	&__wrap
+		position: relative
+		width: 60%
+		display:flex
+		align-items: center
+		justify-content: spaace-between
+		backface-visibility: visible
+		perspective-origin: 150% 150%
+		transform-style: preserve-3d
+		+tr(.6s)
+		&.is-active
+			.menu
+				transform: rotateX(90deg)
+				+tr(.6s)
+			.search
+				width: auto
+				&__input
+					width: 300px
+					max-width: 100%
+					padding: 6px 14px 4px
+					font-size: 14px
+					color: #333
+					background-color: #fff
+					+acr
+					+tr(.6s)
+
+.burger
+	display: none
+	position: absolute
+	top: 40px
+	right: 20px
+	width: 40px
+	height: 40px
+	background-color: $n
+	z-index: 20
+	cursor: pointer
+	transition: all 0.3s ease-out
+	+r(1020)
+		display: inline-block
+	+r(650)
+		top: 25px
+	&:after
+		position: relative
+		display: block
+		content: ' '
+		top: 5px
+		width: 40px
+		height: 5px
+		background-color: #fff
+		transition: all 0.3s ease-out
+	&:before
+		position: relative
+		display: block
+		content: ' '
+		bottom: 10px
+		width: 40px
+		height: 5px
+		background-color: #fff
+		transition: all 0.3s ease-out
+	&.is-active:before
+		bottom: -5px
+		transform: rotate(45deg)
+	&.is-active:after
+		top: -5px
+		transform: rotate(-45deg)
+	&.is-active i
+		background-color: $n
+	i
+		position: relative
+		display: block
+		top: 50%
+		width: 40px
+		height: 5px
+		background-color: #fff
+		+try(-50%)
+		transition: all 0.3s ease-out
+
+.menu
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 0
+	margin: 0
+	list-style-type: none
+	&__item
+		display: inline-block
+		vertical-align: top
+	&__link
+		text-transform: uppercase
+		display: inline-block
+		vertical-align: top
+		color: #fff
+		font-size: 14px
+		letter-spacing: .2em
+		+ab
+		+tr(.4s)
+		&:hover
+			color: $purpur
+
+.search
+	position: absolute
+	top: 0
+	right: 0
+	width: 0
+	overflow: hidden
+	+tr(.6s)
+	&__input
+		display: inline-block
+		vertical-align: top
+		width: 0
+		padding: 0
+		background-color: $n
+		border: none
+
+

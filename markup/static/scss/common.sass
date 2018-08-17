@@ -1,0 +1,132 @@
+*
+	box-sizing: border-box
+	outline: none
+	&:after,
+	&:before
+		box-sizing: inherit
+
+html
+	+selection
+		background: rgba(0, 0, 0, .2)
+		color: #fff
+
+html, body
+	height: 100%
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: antialiased
+
+body
+	color: #000
+	background-color: #fff
+
+
+* html .page__wrapper
+	height: 100%
+
+a,
+button
+	text-decoration: none
+	outline: none
+	border: none
+	cursor: pointer
+
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 .8em
+	font-weight: normal
+	line-height: 1.1
+
+h1
+	font-size: 2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.6em
+h4
+	font-size: 1.5em
+h5
+	font-size: 1.4em
+h6
+	font-size: 1.3em
+
+b, strong
+	font-weight: normal
+
+p
+	margin: 0
+
+.layout
+	position: relative
+	&__wide
+		width: 1240px
+		padding: 0 20px
+		margin: 0 auto
+		max-width: 96%
+
+.section
+	display: block
+
+
+.title
+	&__t
+		font-size: 50px
+		color: #fff
+		line-height: 1.2
+		letter-spacing: -1.04px
+		width: 65%
+		+acr
+
+	&__i
+		font-size: 14px
+		letter-spacing: 1.5px
+		text-transform: uppercase
+		color: #fff // startscreen
+		margin-bottom: 2.2em
+		letter-spacing: 0.108em
+		+ar
+	&__m
+		font-size: 19px
+		line-height: 1.4
+		color: #fff // startscreen
+
+.desc
+	&__m
+		font-size: 14px
+		line-height: 1.6
+		color: #fff
+		+ar
+
+.btn
+	display: inline-block
+	font-weight: 400
+	text-align: center
+	white-space: nowrap
+	vertical-align: top
+	user-select: none
+	border: 1px solid transparent
+	padding: 16px 25px 14px
+	text-transform: uppercase
+	color: #fff
+	font-size: 10px
+	line-height: 1.5
+	letter-spacing: 0.15em
+	+ar
+	+tr(.4s)
+	&-purpur
+		background-color: #AC218E
+
+.parallax
+	+coverdiv
+	overflow: hidden
+	&_bg
+		height: 160%
+		position: relative
+		top: 0%
+		left: 0
+		width: 100%
+		will-change: transform
+		background-position: 50% 100%
+		background-repeat: no-repeat
+		background-attachment: scroll
+		backface-visibility: hidden
+		background-size: cover
