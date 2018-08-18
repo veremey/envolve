@@ -12,12 +12,137 @@
 			<!-- startscreen -->
 			{{> startscreen/startscreen }}
 
+			<!-- mission -->
+			<div class="mission">
+				<div class="layout layout__wide">
+					<div class="col-48">
+						<h5 class="title__r">Mission Statement</h5>
+						<p class="desc__r"><em>The Envolve Center is a Community-Industry-Academic Healthcare Partnership that advances people centered health solutions to improve lives so that communities can thrive.</em></p>
+					</div>
+					<div class="col-48">
+						<div class="mission__pic">
+							<img class="mission__img" src="static/img/content/mission.png" alt="mission">
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<!-- show video -->
+			<div class="section section__s section-purpur">
+				<div class="layout layout__large">
+					<h4 class="title__d">Together, we can address the barriers that prevent better health.</h4>
+					<div class="show-video">
+						<iframe width="1280" height="720" src="https://www.youtube.com/embed/QHzt-z_2jEY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+
+				</div>
+			</div>
+			<!-- our research -->
+			<div class="section section__s js-parent">
+				<div class="layout layout__wide">
+					<h3 class="title__y">Our Research</h3>
+					<p class="desc__d">The Envolve Center <sup>&#8482;</sup> is a <b>community-corporate-academic healthcare partnership</b> that advances <b>life-centric health research</b> to improve lives so communities can thrive. <b>A leading model of collaboration</b> that applies research findings for real-world impact, the Center is a true testament to the value of designing innovative and evidence-based healthcare interventions that translate to the enhanced delivery of managed care. </p>
+
+					<div class="box">
+						<div class="section__nav section__nav_right ">
+							<button class="section__nav_button section__nav_prev">
+								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
+							</button>
+							<button class="section__nav_button section__nav_next">
+								<img src="static/img/general/arrow.svg" alt="next" class="section__nav_img">
+							</button>
+						</div>
+
+						{{> synk-slider/synk-slider}}
+
+					</div>
+					<div class="partners">
+						<h6 class="title__r">IN Collaboration WITH</h6>
+						<div class="partners__pictures">
+							<a href="#" class="partners__link">
+								<img src="static/img/content/partner-1.png" alt="partner pic" class="partners__img">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="static/img/content/partner-2.png" alt="partner pic" class="partners__img">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="static/img/content/partner-3.png" alt="partner pic" class="partners__img">
+							</a>
+							<a href="#" class="partners__link">
+								<img src="static/img/content/partner-4.png" alt="partner pic" class="partners__img">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section section-gray section__s ">
+				<div class="section section__s js-parent">
+					<div class="layout layout__wide">
+						<h3 class="title__y">News, Publications & Blog</h3>
+
+						<div class="section__nav section__nav_right ">
+							<button class="section__nav_button section__nav_prev">
+								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
+							</button>
+							<button class="section__nav_button section__nav_next">
+								<img src="static/img/general/arrow.svg" alt="next" class="section__nav_img">
+							</button>
+						</div>
+
+					{{> third-slider/third-slider}}
+
+					</div>
+				</div>
+
+				<div class="section section__s js-parent">
+					<div class="layout layout__wide">
+						<h3 class="title__y">Featured Events</h3>
+
+						<div class="section__nav section__nav_right ">
+							<button class="section__nav_button section__nav_prev">
+								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
+							</button>
+							<button class="section__nav_button section__nav_next">
+								<img src="static/img/general/arrow.svg" alt="next" class="section__nav_img">
+							</button>
+						</div>
+
+						{{> single-slider/single-slider}}
+					</div>
+				</div>
+
+				<div class="section section__s js-parent">
+					<div class="layout layout__wide">
+						<h3 class="title__y">Annual Report</h3>
+
+						<div class="assets">
+							<div class="assets__text">
+								<h3 class="title__o">A Look at the <br> Center’s Evolution</h3>
+								<p class="desc__d">Our accomplishments, collaborations, and successes; a true testament to the power of industry-academic partnerships.</p>
+								<div class="assets__footer">
+									<a href="./lesson2.pdf" class="btn btn-purpur" download="./lesson2.pdf" >download <br> the pdf</a>
+
+									<a href="./lesson2.pdf" class="btn btn-purpur">VIEW PREVIOUS <br> ANNUAL REPORTS</a>
+								</div>
+							</div>
+
+							<div class="assets__label">
+								<img src="static/img/content/report.png" alt="book">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+
+			{{> footer/footer}}
 		</div>
 
-		<footer class="page__footer">
-			{{> footer/footer}}
-		</footer>
+
+
 
 		<script src="static/js/main%=hash=%%=min=%.js"></script>
 

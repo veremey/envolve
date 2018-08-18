@@ -1,0 +1,53 @@
+.single-slider
+	margin-left: -30px
+	width: calc(100% + 30px)
+	.slick-slide
+		margin-left: 30px
+
+.event
+	display: flex!important
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.03);
+	&__user
+		position: relative
+		flex: 0 0 500px
+		overflow: hidden
+		&_img
+			+vcenter
+			min-width: 100%
+			min-heighht: 100%
+	&__content
+		background-color: #fff
+	&__header
+		position: relative
+		padding: 20px 40px 36px
+		border-bottom: 1px solid #EFEFEF
+	&__info
+		display: inline-block
+		vertical-align: top
+		margin-right: 36px
+	&__share
+		position: absolute
+		top: 20px
+		right: 0px
+		&:hover
+			img
+				filter: drop-shadow(0 0 2px #000)
+		img
+			+tr(.4s)
+	&__text
+		padding: 20px 40px 45px
+
+
+	.title__m
+		color: #000
+	.title__p
+		color: $purpur
+	.desc__m
+		color: #000
+	.btn
+		margin-top: 50px
+	time
+		text-transform: uppercase
+		font-size: 14px
+		color: #000
+		+ar

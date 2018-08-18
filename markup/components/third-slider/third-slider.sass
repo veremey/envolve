@@ -1,0 +1,80 @@
+
+.news.mod-purpur
+	--color: #AC218E
+
+.news.mod-orange
+	--color: #F36F20
+
+.news.mod-yellow
+	--color: #FAA619
+
+.third-slider
+	&.slick-slider
+		margin-left: -40px
+	.slick-slide
+		margin-left: 40px
+.news
+	display: block
+	&__pic
+		position: relative
+		height: 320px
+		display: block
+		font-size: 0
+		border-bottom: 2px solid var(--color)
+		overflow: hidden
+		+tr(.4s)
+		&:hover
+			opacity: .8
+	&__img
+		+vcenter
+		min-width: 100%
+		min-height: 100%
+	&__top
+		margin-bottom: 10px
+	&__content
+		position: relative
+		padding: 30px 35px
+		background-color: #fff
+	&__arrow
+		position: absolute
+		top: -23px
+		right: 80px
+		display: inline-block
+		vertical-align: top
+		width: 46px
+		height: 46px
+		border-radius: 100%
+		background-color: var(--color)
+		+tr(.4s)
+		&:hover
+			.news__arrow_pic
+				left: 60%
+		&_pic
+			+vcenter
+			+tr(.4s)
+	&__top
+		display: flex
+		align-items: center
+	&__link
+		display: block
+		margin-bottom: 20px
+		&:hover
+			.title__m,
+			.desc__d
+				color: var(--color)
+				opacity: .6
+	.desc__limit
+		position: relative
+		display: block
+		height: 98px
+		overflow: hidden
+		text-overflow: ellipsis;
+		+limitLines(4, 4, #fff, #fff, 1.6)
+	.title__m
+		display: block
+		color: #000
+		margin-bottom: 1.2em
+		+acr
+	.title__m,
+	.desc__d
+		+tr(.4s)

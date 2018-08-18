@@ -1,0 +1,104 @@
+
+.footer
+	position: relative
+	height: 100vh
+	min-height: 600px
+	padding: 140px 0 40px
+	overflow: hidden
+	&__top
+		text-align: center
+	&__bottom
+		display: flex
+		justify-content: space-between
+	&__col
+		width: 18%
+	&__logo
+		margin-bottom: 20px
+		img
+			max-width: 100%
+	&__title
+		font-size: 12px
+		line-height: 1.4
+		color: #fff
+		letter-spacing: .1em
+		text-transform: uppercase
+		font-family: Arial, sans-serif
+		font-weight: bold
+		margin-bottom: 20px
+	&__link
+		display: block
+		margin-bottom: 14px
+		color: #fff
+		opacity: .75
+		+tr(.4s)
+		&:hover
+			opacity: 1
+	.layout
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		height: 100%
+	.parallax
+		+blur(20px)
+		top: -20px
+		left: -30px
+		right: -20px
+		bottom: -40px
+		width: auto
+		height: auto
+		&:after
+			content: ''
+			+coverdiv
+			background-color: rgba(0, 0, 0, .6)
+
+
+.subscription
+	margin-bottom: 130px
+	&__field
+		border: none
+		outline: none
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-direction: row
+		width: 376px
+		max-width: 100%
+		margin: 0 auto
+		padding: 0
+	&__input
+		display: inline-block
+		vertical-align: top
+		height: 47px
+		width: 100%
+		border: 1px solid rgba(255, 255, 255, .4)
+		outline: none
+		background-color: $n
+		padding: 9px 17px 13px
+		font-size: 16px
+		color: #fff
+		+fb
+		+placeholder
+			font-size: 12px
+			color: rgba(255, 255, 255, .6)
+			+fb
+			font-weight: 300
+	.title__i
+		opacity: .5
+		font-family: Arial, sans-serif
+		line-height: .9
+		margin-bottom: 10px
+	.btn
+		+ar
+		font-weight: bold
+		&:hover
+			background-color: #ccc
+
+.copy
+	display: block
+	font-size: 10px
+	text-transform: uppercase
+	color: #fff
+	opacity: .5
+	font-family: Arial, sans-serif
+	letter-spacing: .08em
+	margin-bottom: 20px

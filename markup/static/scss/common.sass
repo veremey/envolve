@@ -1,9 +1,11 @@
+
 *
 	box-sizing: border-box
 	outline: none
 	&:after,
 	&:before
 		box-sizing: inherit
+
 
 html
 	+selection
@@ -29,6 +31,7 @@ button
 	outline: none
 	border: none
 	cursor: pointer
+	background-color: $n
 
 
 h1, h2, h3, h4, h5, h6
@@ -62,10 +65,34 @@ p
 		padding: 0 20px
 		margin: 0 auto
 		max-width: 96%
+	&__large
+		width: 930px
+		padding: 0 20px
+		margin: 0 auto
+		max-width: 96%
+
 
 .section
 	display: block
-
+	&__s
+		position: relative
+		padding: 70px 0 90px
+	&-gray
+		background-color: #F7F6F6
+	&__nav
+		margin-left: auto
+		display: flex
+		align-items: center
+		&_button
+			padding: 4px 6px
+			margin-left: 10px
+		&_prev
+			transform: translate3d(0, 0, 0) rotateY(180deg)
+		&_right
+			position: absolute
+			top: 0
+			right: 20px
+			z-index: 3
 
 .title
 	&__t
@@ -75,7 +102,41 @@ p
 		letter-spacing: -1.04px
 		width: 65%
 		+acr
-
+	&__o
+		font-size: 40px
+		line-height: 1.2
+		color: #fff
+		+acr
+	&__y
+		font-size: 30px
+		color: #0F0F0F
+		line-height: .9
+		margin-bottom: 1.3em
+		+acr
+	&__d
+		font-size: 28px
+		line-height: 1.6
+		text-align: center
+		color: #fff
+		+ab
+	&__m
+		font-size: 19px
+		line-height: 1.4
+		color: #fff // startscreen
+	&__r
+		font-size: 18px
+		color: $purpur
+		letter-spacing: .1em
+		line-height: 1.2
+		margin-bottom: 2.66em
+		text-transform: uppercase
+		+ab
+	&__e
+		font-size: 16px
+		color: #59616B
+		margin-bottom: 2em
+		+acr
+		font-weight: bold
 	&__i
 		font-size: 14px
 		letter-spacing: 1.5px
@@ -84,17 +145,35 @@ p
 		margin-bottom: 2.2em
 		letter-spacing: 0.108em
 		+ar
-	&__m
-		font-size: 19px
-		line-height: 1.4
-		color: #fff // startscreen
+	&__p
+		font-size: 10px
+		text-transform: uppercase
+		line-height: 1
+		letter-spacing: .1em
+		margin-right: 14px
+		color: var(--color)
+		+ab
+
 
 .desc
+	&__r
+		font-size: 18px
+		line-height: 2.1
+		color: #29333f
+		+acr
+	&__d
+		font-size: 16px
+		line-height: 1.6
+		color: #565E68
+		+ar
 	&__m
 		font-size: 14px
 		line-height: 1.6
 		color: #fff
 		+ar
+
+.box
+	position: relative
 
 .btn
 	display: inline-block
@@ -112,14 +191,19 @@ p
 	letter-spacing: 0.15em
 	+ar
 	+tr(.4s)
+	&:hover
+		opacity: .9
 	&-purpur
 		background-color: #AC218E
+	&-white
+		background-color: #fff
+		color: $purpur
 
 .parallax
 	+coverdiv
 	overflow: hidden
 	&_bg
-		height: 160%
+		height: 120%
 		position: relative
 		top: 0%
 		left: 0
@@ -130,3 +214,106 @@ p
 		background-attachment: scroll
 		backface-visibility: hidden
 		background-size: cover
+	&_fix
+		height: 100%
+		position: relative
+		top: 0%
+		left: 0
+		width: 100%
+		will-change: transform
+		background-position: 50% 100%
+		background-repeat: no-repeat
+		background-attachment: fixed
+		backface-visibility: hidden
+		background-size: cover
+
+.mission
+	padding: 40px 0
+	&__pic
+		text-align: right
+	&__img
+		display: inline-block
+		vertical-align: top
+		max-width: 100%
+	.layout
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+.partners
+	display: flex
+	align-items: center
+	justify-content: space-between
+	.title__r
+		margin-bottom: 0
+		padding-top: 6px
+	&__pictures
+		width: 70%
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__link
+		display: inline-block
+		vertical-align: top
+		opacity: .8
+		+tr(.4s)
+		&:hover
+			opacity: 1
+
+.tag
+	display: inline-block
+	vertical-align: top
+	padding: 4px 8px
+	border-radius: 25px
+	background-color: #969696
+	color: #fff
+	font-size: 10px
+	margin-right: 8px
+	letter-spacing: 0.1em
+	text-transform: uppercase
+	+ab
+	+tr(.4s)
+	&:hover
+		background-color: #676262
+
+.show-video
+	*
+		max-width: 100%
+		height: 60vh
+
+.assets
+	position: relative
+	background-color: #fff
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.03)
+	padding: 90px 100px
+	&__text
+		display: inline-block
+		vertical-align: top
+		width: 420px
+	&__label
+		display: inline-block
+		vertical-align: top
+		margin-left: 20%
+	&__footer
+		margin-top: 30px
+	.btn
+		width: 192px
+		max-width: 100%
+		margin-right: 16px
+		padding: 8px 25px 6px
+	.title__o
+		color: #000
+
+
+.slick-disabled
+	opacity: .4
+	cursor: default
+
+.col-48
+	width: 48%
+
+.section-purpur
+	background-color: $purpur
+	.title__d
+		margin-bottom: 1.8em
+

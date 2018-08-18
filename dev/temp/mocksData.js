@@ -1,3 +1,5 @@
+'footer': {},
+
 'head': {
     defaults: {
         title: 'Envolve center',
@@ -6,6 +8,8 @@
 },
 
 'startscreen': {},
+
+'synk-slider': {},
 
 __pages: [{
                 name: 'index',

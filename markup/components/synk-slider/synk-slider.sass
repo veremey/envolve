@@ -1,0 +1,58 @@
+
+.synk-slider
+	margin-bottom: 100px
+	margin-top: 220px
+	.slick-dots
+		position: absolute
+		top: -190px
+		left: 0
+		right: 0
+		padding: 0
+		display: flex
+		justify-content: space-between
+		img
+			display: inline-block
+			vertical-align: top
+		li
+			display: inline-block
+			vertical-align: top
+		.slick-active
+			padding: 0 20px
+			border-bottom: 2px solid #F47022
+			background-color: #fff
+			box-shadow: 0 0 20px rgba(0, 0, 0, .4)
+			+scale(1.1)
+			img
+				+scale(1.1)
+		.tab
+			padding: 20px
+
+.synk
+	&-top
+		&__pic
+			display: none
+		&__img
+			max-width: 100%
+			max-height: 100%
+
+	&-slider
+		&__item
+			display: flex!important
+		&__pic
+			margin-right: 6%
+			font-size: 0
+		&__content
+			display: inline-block
+			vertical-align: top
+			width: 36%
+			.btn
+				margin-top: 40px
+
+.slick-current
+	.synk-top__pic
+		background-color: #fff
+		box-shadow: 0 0 4px rgba(0, 0, 0, .6)
+		border-bottom: 2px solid #f47022
+	.synk-top__img
+		transform: translate3d(0, 0, 0) scale(1.2)
+
