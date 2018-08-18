@@ -2,10 +2,7 @@
 
 $(document).ready(function () {
 
-	Global.threeSlider({
-		slider: '.third-slider',
-		sliderItem: '.news'
-	});
+
 
 	if (typeof window.document.createElement('div').style.webkitLineClamp !== 'undefined') {
 	    document.querySelector('html').classList.add('webkit-line-clamp');
@@ -45,6 +42,11 @@ $(document).ready(function () {
 		Global.simpleSlider({
 			slider: '.single-slider',
 			sliderItem: '.event'
+		});
+
+		Global.threeSlider({
+			slider: '.third-slider',
+			sliderItem: '.news'
 		});
 	// }
 

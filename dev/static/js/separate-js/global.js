@@ -186,8 +186,8 @@ function GlobalClass() {
 				slidesToShow: 3,
 				slidesToScroll: 1,
 				infinite: false,
-				prevArrow: slider.parents('.js-parent').find('.section__nav_prev'),
-				nextArrow: slider.parents('.js-parent').find('.section__nav_next'),
+				prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
+				nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
 				responsive: [
 					{
 						breakpoint: 1024,
