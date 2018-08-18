@@ -100,11 +100,13 @@ function GlobalClass() {
 	/*- dots slider  -*/
 	this.dotsSlider = function (opt) {
 		var slider = $(opt.slider);
+		var $initialSlide = 0 ;
 
 		slider.each(function () {
 			$(this).slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			initialSlide: $initialSlide,
 			infinite: false,
 			prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
 			nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
@@ -123,16 +125,19 @@ function GlobalClass() {
 		});
 		});
 	}
+
 	/*- simple slider  -*/
 	this.simpleSlider = function (opt) {
 		var slider = $(opt.slider);
 		var sliderItem = $(opt.sliderItem);
+		var $initialSlide = 0 ;
 
 		if(sliderItem.length > 1) {
 			slider.each(function () {
 				$(this).slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				initialSlide: $initialSlide,
 				infinite: false,
 				prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
 				nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),

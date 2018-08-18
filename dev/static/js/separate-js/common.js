@@ -11,19 +11,12 @@ $(document).ready(function () {
 	    document.querySelector('html').classList.add('webkit-line-clamp');
 	}
 
-	$('.page-tab').on('click touchstart ', function () {
+	$('.page-tab').click(function () {
+		var $this = $(this);
 		$(this).toggleClass('is-active');
 		$(this).next('.section').toggleClass('is-active');
 
-
-		Global.dotsSlider({
-			slider: '.synk-slider'
-		});
-
-		Global.simpleSlider({
-			slider: '.single-slider',
-			sliderItem: '.event'
-		});
+		$this.next('.section').find('.slick-slider').slick('slickNext');
 
 	});
 
