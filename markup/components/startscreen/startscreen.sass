@@ -15,18 +15,32 @@
 	&__content
 		margin-top: 30px
 		padding-bottom: 80px
+		+r(768)
+			padding-bottom: 30px
 	.layout
 		height: 100%
 	.title__i
 		opacity: .75
 	.title__t
 		margin-bottom: 60px
+		+r(1020)
+			line-height: 1.6
+		+r(768)
+			width: 100%
+			margin-bottom: 30px
+			letter-spacing: 0
 
-	&-slider
+	&-box
 		position: absolute
 		bottom: 30px
 		left: 0
 		right: 0
+		z-index: 10
+	&-slider
+		// position: absolute
+		// bottom: 30px
+		// left: 0
+		// right: 0
 		display: flex
 		justify-content: space-between
 		padding-top: 35px
@@ -45,6 +59,8 @@
 			border-radius: 100%
 			margin-right: 12px
 			overflow: hidden
+			+r(768)
+				display: none
 		&__img
 			+vcenter
 			min-width: 100%
@@ -53,5 +69,13 @@
 			display: inline-block
 			vertical-align: top
 			width: calc(100% - 124px)
+			+r(768)
+				width: 100%
+
+	.section__nav
+		position: absolute
+		top: 20px
+		right: 0
+		z-index: 100
 
 

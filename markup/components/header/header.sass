@@ -4,6 +4,8 @@
 	align-items: center
 	justify-content: space-between
 	padding: 40px 0
+	+r(768)
+		padding: 20px 0
 	&__wrap
 		position: relative
 		width: 60%
@@ -14,6 +16,15 @@
 		perspective-origin: 150% 150%
 		transform-style: preserve-3d
 		+tr(.6s)
+		+r(1020)
+			position: fixed
+			top: 0
+			bottom: 0
+			left: 140%
+			display: flex
+			align-items: center
+			width: 100vw
+			background-color: rgba(0, 0, 0, .8)
 		&.is-active
 			.menu
 				transform: rotateX(90deg)
@@ -29,6 +40,12 @@
 					background-color: #fff
 					+acr
 					+tr(.6s)
+	&__logo
+		max-width: 100%
+		+r(768)
+			width: calc(100% - 80px)
+		img
+			max-width: 100%
 
 .burger
 	display: none
@@ -43,8 +60,10 @@
 	transition: all 0.3s ease-out
 	+r(1020)
 		display: inline-block
-	+r(650)
+		right: 6px
+	+r(768)
 		top: 25px
+
 	&:after
 		position: relative
 		display: block
@@ -88,9 +107,19 @@
 	padding: 0
 	margin: 0
 	list-style-type: none
+	+r(1020)
+		height: 100%
+		width: 100%
+		flex-direction: column
+		justify-content: center
+		padding-top: 60px
 	&__item
 		display: inline-block
 		vertical-align: top
+		+r(1020)
+			margin-bottom: 20px
+		// 	display: block
+		// 	text-align: center
 	&__link
 		text-transform: uppercase
 		display: inline-block
@@ -103,6 +132,12 @@
 		&:hover
 			color: $purpur
 
+.nav
+	+r(1020)
+		display: flex
+		height: 100%
+		width: 100%
+
 .search
 	position: absolute
 	top: 0
@@ -110,6 +145,11 @@
 	width: 0
 	overflow: hidden
 	+tr(.6s)
+	+r(1020)
+		display: block
+		width: 100%
+		top: 20px
+		text-align: center
 	&__input
 		display: inline-block
 		vertical-align: top
@@ -117,5 +157,28 @@
 		padding: 0
 		background-color: $n
 		border: none
+		+r(1020)
+			top: 20px
+			width: 300px
+			max-width: 100%
+			padding: 6px 14px 4px
+			font-size: 14px
+			color: #333
+			background-color: #fff
+			+acr
+			+tr(.6s)
 
+.menu__item_search
+	+r(1020)
+		display: none
 
+.page__wrapper
+	&.is-active
+		position: fixed
+		width: 100%
+		.header__wrap
+			left: 0%
+		.startscreen__wrap
+			z-index: 20
+		.startscreen .title__i
+			opacity: 1

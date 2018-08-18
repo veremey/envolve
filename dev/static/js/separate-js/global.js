@@ -111,7 +111,15 @@ function GlobalClass() {
 			dots: true,
 			customPaging: function(slider, i) {
 			return '<button class="tab">' + $(slider.$slides[i]).find('.synk-top__pic').html() + '</button>';
-			}
+			},
+			responsive: [
+				{
+					breakpoint: 800,
+					settings: {
+						dots: false
+					}
+				}
+				]
 		});
 		});
 	}
@@ -164,7 +172,6 @@ function GlobalClass() {
 	}
 
 	/*- three slider  -*/
-
 	this.threeSlider = function (opt) {
 		var slider = $(opt.slider);
 		var sliderItem = $(opt.sliderItem);
@@ -184,7 +191,7 @@ function GlobalClass() {
 						}
 					},
 					{
-						breakpoint: 650,
+						breakpoint: 800,
 						settings: {
 							slidesToShow: 1
 						}

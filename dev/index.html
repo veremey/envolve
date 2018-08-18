@@ -31,7 +31,7 @@
 		<div class="page__wrapper">
 
 			<!-- startscreen -->
-			<div id="startscreen" class="section startscreen " data-aos="fade-down"  data-aos-duration="0"  data-aos-offset="20" data-aos-delay="0" >
+			<div id="startscreen" class="section startscreen js-parent" data-aos="fade-down"  data-aos-duration="0"  data-aos-offset="20" data-aos-delay="0" >
 			
 				<div  class="parallax" >
 					<div class="parallax_fix"  style='background-image: url(static/img/content/slider.png);'></div>
@@ -75,35 +75,47 @@
 						</div>
 					</div>
 			
-					<div class="startscreen-slider">
-						<div class="startscreen-slider__item">
-							<div class="startscreen-slider__pic">
-								<img src="static/img/content/1.png" alt="" class="startscreen-slider__img">
-							</div>
-							<div class="startscreen-slider__content">
-								<h6 class="title__m">Research</h6>
-								<p class="desc__m">Together, we design, implement and evaluate evidence-based studies and uncover best practices to motivate individuals to take action to improve their lives.</p>
-							</div>
+			
+					<div class="startscreen-box">
+						<div class="section__nav section__nav_right show-1020">
+							<button class="section__nav_button section__nav_prev">
+								<img src="static/img/general/arrow-white.svg" alt="prev" class="section__nav_img">
+							</button>
+							<button class="section__nav_button section__nav_next">
+								<img src="static/img/general/arrow-white.svg" alt="next" class="section__nav_img">
+							</button>
 						</div>
-						<div class="startscreen-slider__item">
-							<div class="startscreen-slider__pic">
-								<img src="static/img/content/2.png" alt="" class="startscreen-slider__img">
+						<div class="startscreen-slider">
+							<div class="startscreen-slider__item">
+								<div class="startscreen-slider__pic">
+									<img src="static/img/content/1.png" alt="" class="startscreen-slider__img">
+								</div>
+								<div class="startscreen-slider__content">
+									<h6 class="title__m">Research</h6>
+									<p class="desc__m">Together, we design, implement and evaluate evidence-based studies and uncover best practices to motivate individuals to take action to improve their lives.</p>
+								</div>
 							</div>
-							<div class="startscreen-slider__content">
-								<h6 class="title__m">Reach</h6>
-								<p class="desc__m">With Centene operations in 29 states and over 12 million members, our research informs programs and services that reach our nation’s most vulnerable families and communities.</p>
+							<div class="startscreen-slider__item">
+								<div class="startscreen-slider__pic">
+									<img src="static/img/content/2.png" alt="" class="startscreen-slider__img">
+								</div>
+								<div class="startscreen-slider__content">
+									<h6 class="title__m">Reach</h6>
+									<p class="desc__m">With Centene operations in 29 states and over 12 million members, our research informs programs and services that reach our nation’s most vulnerable families and communities.</p>
+								</div>
 							</div>
-						</div>
-						<div class="startscreen-slider__item">
-							<div class="startscreen-slider__pic">
-								<img src="static/img/content/3.png" alt="" class="startscreen-slider__img">
-							</div>
-							<div class="startscreen-slider__content">
-								<h6 class="title__m">Real World Impact</h6>
-								<p class="desc__m">We are positioned to improve the effectiveness of healthcare delivery, positively influence health outcomes, and decrease healthcare costs.</p>
+							<div class="startscreen-slider__item">
+								<div class="startscreen-slider__pic">
+									<img src="static/img/content/3.png" alt="" class="startscreen-slider__img">
+								</div>
+								<div class="startscreen-slider__content">
+									<h6 class="title__m">Real World Impact</h6>
+									<p class="desc__m">We are positioned to improve the effectiveness of healthcare delivery, positively influence health outcomes, and decrease healthcare costs.</p>
+								</div>
 							</div>
 						</div>
 					</div>
+			
 				</div>
 			</div>
 
@@ -114,7 +126,7 @@
 						<h5 class="title__r">Mission Statement</h5>
 						<p class="desc__r"><em>The Envolve Center is a Community-Industry-Academic Healthcare Partnership that advances people centered health solutions to improve lives so that communities can thrive.</em></p>
 					</div>
-					<div class="col-48">
+					<div class="col-48 hide-768">
 						<div class="mission__pic">
 							<img class="mission__img" src="static/img/content/mission.png" alt="mission">
 						</div>
@@ -122,6 +134,13 @@
 				</div>
 			</div>
 
+			<!-- show video tab -->
+			<div class="page-tab">
+				<div class="layout layout__large">
+					<h3 class="title__y">Watch Video</h3>
+					<button class="page-tab_btn"></button>
+				</div>
+			</div>
 			<!-- show video -->
 			<div class="section section__s section-purpur">
 				<div class="layout layout__large">
@@ -130,6 +149,14 @@
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/QHzt-z_2jEY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 
+				</div>
+			</div>
+
+			<!-- tab -->
+			<div class="page-tab">
+				<div class="layout layout__large">
+					<h3 class="title__y">Our Research</h3>
+					<button class="page-tab_btn"></button>
 				</div>
 			</div>
 			<!-- our research -->
@@ -233,7 +260,7 @@
 						</div>
 
 					</div>
-					<div class="partners">
+					<div class="partners hide-1020">
 						<h6 class="title__r">IN Collaboration WITH</h6>
 						<div class="partners__pictures">
 							<a href="#" class="partners__link">
@@ -253,7 +280,15 @@
 				</div>
 			</div>
 
-			<div class="section section-gray section__s ">
+			<div class="section section-gray mod_s">
+				<!-- tab -->
+				<div class="page-tab">
+					<div class="layout layout__large">
+						<h3 class="title__y">News, Publications & Blog</h3>
+						<button class="page-tab_btn"></button>
+					</div>
+				</div>
+				<!-- News, Publications & Blog -->
 				<div class="section section__s js-parent">
 					<div class="layout layout__wide">
 						<h3 class="title__y">News, Publications & Blog</h3>
@@ -370,6 +405,14 @@
 					</div>
 				</div>
 
+				<!-- tab -->
+				<div class="page-tab">
+					<div class="layout layout__large">
+						<h3 class="title__y">Featured Events</h3>
+						<button class="page-tab_btn"></button>
+					</div>
+				</div>
+				<!-- Featured Events -->
 				<div class="section section__s js-parent">
 					<div class="layout layout__wide">
 						<h3 class="title__y">Featured Events</h3>
@@ -445,7 +488,14 @@
 							</div>
 						</div>					</div>
 				</div>
-
+				<!-- tab -->
+				<div class="page-tab">
+					<div class="layout layout__large">
+						<h3 class="title__y">Annual Report</h3>
+						<button class="page-tab_btn"></button>
+					</div>
+				</div>
+				<!-- Annual Report -->
 				<div class="section section__s js-parent">
 					<div class="layout layout__wide">
 						<h3 class="title__y">Annual Report</h3>
@@ -466,6 +516,24 @@
 							</div>
 						</div>
 
+					</div>
+				</div>
+
+				<div class="partners show-1020">
+					<h6 class="title__r">IN Collaboration WITH</h6>
+					<div class="partners__pictures">
+						<a href="#" class="partners__link">
+							<img src="static/img/content/partner-1.png" alt="partner pic" class="partners__img">
+						</a>
+						<a href="#" class="partners__link">
+							<img src="static/img/content/partner-2.png" alt="partner pic" class="partners__img">
+						</a>
+						<a href="#" class="partners__link">
+							<img src="static/img/content/partner-3.png" alt="partner pic" class="partners__img">
+						</a>
+						<a href="#" class="partners__link">
+							<img src="static/img/content/partner-4.png" alt="partner pic" class="partners__img">
+						</a>
 					</div>
 				</div>
 
@@ -491,12 +559,14 @@
 					</div>
 			
 					<div class="footer__bottom">
-						<div class="footer__col">
+						<div class="footer__col footer__col_first">
 							<a href="./" class="footer__logo"><img src="static/img/general/logo.png" alt="logo"></a>
 							<div class="copy">&copy; 2018 CENTENE CORPORATION</div>
-							<a href="#" class="footer__link">Terms & Conditions</a>
-							<a href="#" class="footer__link">Privacy Policy</a>
-							<a href="#" class="footer__link">Site Map</a>
+							<div class="footer__col_content">
+								<a href="#" class="footer__link">Terms & Conditions</a>
+								<a href="#" class="footer__link">Privacy Policy</a>
+								<a href="#" class="footer__link">Site Map</a>
+							</div>
 						</div>
 						<div class="footer__col">
 							<h6 class="footer__title">About Us</h6>

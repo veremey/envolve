@@ -2,6 +2,11 @@
 .synk-slider
 	margin-bottom: 100px
 	margin-top: 220px
+	+r(800)
+		margin-top: 40px
+		margin-bottom: 0px
+		padding-top: 20px
+		border-top: 1px solid #b1b6bc
 	.slick-dots
 		position: absolute
 		top: -190px
@@ -38,13 +43,19 @@
 	&-slider
 		&__item
 			display: flex!important
+			+r(768)
+				display: block!important
 		&__pic
 			margin-right: 6%
 			font-size: 0
+			+r(768)
+				display: none
 		&__content
 			display: inline-block
 			vertical-align: top
 			width: 36%
+			+r(768)
+				width: calc(100% - 80px)
 			.btn
 				margin-top: 40px
 

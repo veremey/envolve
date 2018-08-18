@@ -58,6 +58,41 @@ b, strong
 p
 	margin: 0
 
+.page
+	&-tab
+		background-color: #F7F5F6
+		border-bottom: 4px solid #fff
+		cursor: pointer
+		&:hover
+			background-color: $purpur
+			.title__y
+				color: #fff
+			.page-tab_btn
+				background: $n url(../img/general/arrow-white.svg) 50% 50% no-repeat
+		&.is-active
+			.page-tab_btn
+				+rotate(90)
+		&_btn
+			display: inline-block
+			vertical-align: top
+			width: 24px
+			height: 24px
+			background: $n url(../img/general/arrow.svg) 50% 50% no-repeat
+		.layout
+			position: relative
+			height: 80px
+			width: 100%
+			max-width: 100%
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+		.title__y
+			margin-bottom: 0
+			font-size: 20px
+			line-height: .9
+
+
 .layout
 	position: relative
 	&__wide
@@ -65,20 +100,30 @@ p
 		padding: 0 20px
 		margin: 0 auto
 		max-width: 96%
+		+r(768)
+			width: 100%
 	&__large
 		width: 930px
 		padding: 0 20px
 		margin: 0 auto
 		max-width: 96%
-
+		+r(768)
+			width: 100%
 
 .section
 	display: block
 	&__s
 		position: relative
 		padding: 70px 0 90px
+		+r(768)
+			display: none
+			padding: 35px 0 40px
+			&.is-active
+				display: block
 	&-gray
 		background-color: #F7F6F6
+		+r(768)
+			background-color: #fff
 	&__nav
 		margin-left: auto
 		display: flex
@@ -102,6 +147,10 @@ p
 		letter-spacing: -1.04px
 		width: 65%
 		+acr
+		+r(1020)
+			font-size: 32px
+		+r(650)
+			font-size: 20px
 	&__o
 		font-size: 40px
 		line-height: 1.2
@@ -113,6 +162,8 @@ p
 		line-height: .9
 		margin-bottom: 1.3em
 		+acr
+		+r(768)
+			width: calc(100% - 90px)
 	&__d
 		font-size: 28px
 		line-height: 1.6
@@ -145,6 +196,8 @@ p
 		margin-bottom: 2.2em
 		letter-spacing: 0.108em
 		+ar
+		+r(1020)
+			font-size: 12px
 	&__p
 		font-size: 10px
 		text-transform: uppercase
@@ -153,7 +206,6 @@ p
 		margin-right: 14px
 		color: var(--color)
 		+ab
-
 
 .desc
 	&__r
@@ -174,6 +226,9 @@ p
 
 .box
 	position: relative
+	.section__nav_right
+		+r(800)
+			top: 20px
 
 .btn
 	display: inline-block
@@ -229,6 +284,8 @@ p
 
 .mission
 	padding: 40px 0
+	+r(768)
+		text-align: center
 	&__pic
 		text-align: right
 	&__img
@@ -239,11 +296,20 @@ p
 		display: flex
 		align-items: center
 		justify-content: space-between
+		+r(768)
+			display: block
+	.col-48
+		+r(768)
+			width: 100%
 
 .partners
 	display: flex
 	align-items: center
 	justify-content: space-between
+	+r(1020)
+		text-align: center
+	+r(768)
+		padding-top: 40px
 	.title__r
 		margin-bottom: 0
 		padding-top: 6px
@@ -252,13 +318,28 @@ p
 		display: flex
 		align-items: center
 		justify-content: space-between
+		+r(1020)
+			width: 100%
+			padding: 0 20px
+			margin-top: 30px
+			flex-wrap: wrap
 	&__link
 		display: inline-block
 		vertical-align: top
 		opacity: .8
 		+tr(.4s)
+		+r(1020)
+			padding: 0 10px
+			margin-bottom: 20px
+		+r(768)
+			width: 40%
+			text-align: center
 		&:hover
 			opacity: 1
+		img
+			display: inline-block
+			vertical-align: top
+			max-width: 100%
 
 .tag
 	display: inline-block
@@ -286,14 +367,34 @@ p
 	background-color: #fff
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.03)
 	padding: 90px 100px
+	+r(768)
+		padding: 20px 30px
 	&__text
 		display: inline-block
 		vertical-align: top
 		width: 420px
+		+r(1020)
+			width: 100%
+
 	&__label
 		display: inline-block
 		vertical-align: top
 		margin-left: 20%
+		+r(1250)
+			position: absolute
+			top: 50%
+			right: 80px
+			+try(-50%)
+		+r(1020)
+			display: none
+			position: relative
+			right: auto
+			left: 50%
+			top: 0
+			margin-left: 0
+			margin-top: 30px
+			+trx(-50%)
+
 	&__footer
 		margin-top: 30px
 	.btn
@@ -301,6 +402,9 @@ p
 		max-width: 100%
 		margin-right: 16px
 		padding: 8px 25px 6px
+		+r(580)
+			margin-bottom: 20px
+			width: 100%
 	.title__o
 		color: #000
 
@@ -309,8 +413,32 @@ p
 	opacity: .4
 	cursor: default
 
+
+.mod_s
+	padding: 70px 0 90px
+	+r(768)
+		padding: 0px 0 40px
+
 .col-48
 	width: 48%
+
+.show-1020
+	display: none
+	+r(1020)
+		display: block
+
+.hide-1020
+	+r(1020)
+		display: none
+
+.hide-768
+	+r(768)
+		display: none
+
+.show-768
+	display: none
+	+r(768)
+		display: block
 
 .section-purpur
 	background-color: $purpur
