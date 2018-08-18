@@ -60,9 +60,12 @@ p
 
 .page
 	&-tab
+		display: none
 		background-color: #F7F5F6
 		border-bottom: 4px solid #fff
 		cursor: pointer
+		+r(768)
+			display: block
 		&:hover
 			background-color: $purpur
 			.title__y

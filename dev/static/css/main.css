@@ -585,9 +585,16 @@ p {
 }
 
 .page-tab {
+  display: none;
   background-color: #F7F5F6;
   border-bottom: 4px solid #fff;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-tab {
+    display: block;
+  }
 }
 
 .page-tab:hover {
