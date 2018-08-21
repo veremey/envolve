@@ -31,7 +31,7 @@
 		<div class="page__wrapper">
 
 			<!-- startscreen -->
-			<div id="startscreen" class="section startscreen js-parent" data-aos="fade-down"  data-aos-duration="0"  data-aos-offset="20" data-aos-delay="0" >
+			<div id="startscreen" class="section startscreen js-parent" tabindex="0" data-aos="fade-down"  data-aos-duration="0"  data-aos-offset="20" data-aos-delay="0" >
 			
 				<div  class="parallax" >
 					<div class="parallax_fix"  style='background-image: url(static/img/content/slider.png);'></div>
@@ -39,16 +39,16 @@
 			
 				<div class="layout layout__wide">
 					<div class="startscreen__wrap">
-						<div class="header" >
+						<div class="header"  tabindex="0">
 							<a href="/" class="header__logo" >
 								<img src="static/img/general/logo.png" alt="logo" class="header__logo_img">
 							</a>
 						
-							<button class="burger"><i></i></button>
+							<button class="burger" aria-label="open or hide menu"><i></i></button>
 						
 							<div class="header__wrap" >
 						
-								<nav class="nav"  data-aos="flip-up" data-aos-offset="20"  data-aos-duration="800" data-aos-delay="500">
+								<nav class="nav" tabindex="0" role="navigation" data-aos="flip-up" data-aos-offset="20"  data-aos-duration="800" data-aos-delay="500">
 						
 									<ul class="menu ">
 										<li class="menu__item"  data-aos="flip-up"  data-aos-offset="20"   data-aos-duration="1500" data-aos-delay="600"><a href="/" class="menu__link">About</a></li>
@@ -62,31 +62,31 @@
 									</ul>
 								</nav>
 						
-								<div class="search">
+								<form method="post" action="/" class="search" role="search" tabindex="0">
 									<input class="search__input" type="text" name="seach" id="search " placeholder="Search">
-								</div>
+								</form>
 						
 							</div>
 						</div>
-						<div class="startscreen__content">
+						<div class="startscreen__content"  tabindex="0">
 							<h4 class="title__i">COMMUNITY HEALTH CATALYST</h4>
 							<h3 class="title__t">Translational research that convenes industry and academic experts for real-world impact.</h3>
-							<button class="btn btn-purpur">Research Focus Areas</button>
+							<button class="btn btn-purpur"  tabindex="0">Research Focus Areas</button>
 						</div>
 					</div>
 			
 			
-					<div class="startscreen-box">
+					<div class="startscreen-box"  tabindex="0">
 						<div class="section__nav section__nav_right show-1020">
-							<button class="section__nav_button section__nav_prev">
+							<button class="section__nav_button section__nav_prev" tabindex="0">
 								<img src="static/img/general/arrow-white.svg" alt="prev" class="section__nav_img">
 							</button>
-							<button class="section__nav_button section__nav_next">
+							<button class="section__nav_button section__nav_next" tabindex="0">
 								<img src="static/img/general/arrow-white.svg" alt="next" class="section__nav_img">
 							</button>
 						</div>
-						<div class="startscreen-slider">
-							<div class="startscreen-slider__item">
+						<div class="startscreen-slider"  tabindex="0">
+							<div class="startscreen-slider__item" tabindex="0">
 								<div class="startscreen-slider__pic">
 									<img src="static/img/content/1.png" alt="" class="startscreen-slider__img">
 								</div>
@@ -95,7 +95,7 @@
 									<p class="desc__m">Together, we design, implement and evaluate evidence-based studies and uncover best practices to motivate individuals to take action to improve their lives.</p>
 								</div>
 							</div>
-							<div class="startscreen-slider__item">
+							<div class="startscreen-slider__item" tabindex="0">
 								<div class="startscreen-slider__pic">
 									<img src="static/img/content/2.png" alt="" class="startscreen-slider__img">
 								</div>
@@ -104,7 +104,7 @@
 									<p class="desc__m">With Centene operations in 29 states and over 12 million members, our research informs programs and services that reach our nation’s most vulnerable families and communities.</p>
 								</div>
 							</div>
-							<div class="startscreen-slider__item">
+							<div class="startscreen-slider__item" tabindex="0">
 								<div class="startscreen-slider__pic">
 									<img src="static/img/content/3.png" alt="" class="startscreen-slider__img">
 								</div>
@@ -122,11 +122,11 @@
 			<!-- mission -->
 			<div class="mission">
 				<div class="layout layout__wide">
-					<div class="col-48">
+					<div class="col-48"  tabindex="0">
 						<h5 class="title__r">Mission Statement</h5>
 						<p class="desc__r"><em>The Envolve Center is a Community-Industry-Academic Healthcare Partnership that advances people centered health solutions to improve lives so that communities can thrive.</em></p>
 					</div>
-					<div class="col-48 hide-768">
+					<div class="col-48 hide-768"  tabindex="0">
 						<div class="mission__pic">
 							<img class="mission__img" src="static/img/content/mission.png" alt="mission">
 						</div>
@@ -137,15 +137,15 @@
 			<!-- show video tab -->
 			<div class="page-tab">
 				<div class="layout layout__large">
-					<h3 class="title__y">Watch Video</h3>
+					<h3 class="title__y"  tabindex="0">Watch Video</h3>
 					<button class="page-tab_btn"></button>
 				</div>
 			</div>
 			<!-- show video -->
-			<div class="section section__s section-purpur">
+			<div class="section section__s section-purpur section-video">
 				<div class="layout layout__large">
-					<h4 class="title__d">Together, we can address the barriers that prevent better health.</h4>
-					<div class="show-video">
+					<h4 class="title__d"  tabindex="0">Together, we can address the barriers that prevent better health.</h4>
+					<div class="show-video"  tabindex="0">
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/QHzt-z_2jEY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 
@@ -155,18 +155,18 @@
 			<!-- tab -->
 			<div class="page-tab">
 				<div class="layout layout__large">
-					<h3 class="title__y">Our Research</h3>
-					<button class="page-tab_btn"></button>
+					<h3 class="title__y"  tabindex="0">Our Research</h3>
+					<button class="page-tab_btn" ></button>
 				</div>
 			</div>
 			<!-- our research -->
 			<div class="section section__s js-parent">
-				<div class="layout layout__wide">
-					<h3 class="title__y">Our Research</h3>
+				<div class="layout layout__wide"  tabindex="0">
+					<h3 class="title__y"  tabindex="0">Our Research</h3>
 					<p class="desc__d">The Envolve Center <sup>&#8482;</sup> is a <b>community-corporate-academic healthcare partnership</b> that advances <b>life-centric health research</b> to improve lives so communities can thrive. <b>A leading model of collaboration</b> that applies research findings for real-world impact, the Center is a true testament to the value of designing innovative and evidence-based healthcare interventions that translate to the enhanced delivery of managed care. </p>
 
 					<div class="box">
-						<div class="section__nav section__nav_right ">
+						<div class="section__nav section__nav_right " tabindex="0">
 							<button class="section__nav_button section__nav_prev">
 								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
 							</button>
@@ -176,8 +176,8 @@
 						</div>
 
 						
-						<div class="synk-slider ">
-							<div class="synk-slider__item">
+						<div class="synk-slider " tabindex="0">
+							<div class="synk-slider__item" tabindex="0">
 								<div class="synk-top__pic">
 									<img  class="synk-top__img" src="static/img/content/1-1.png" alt="pic">
 								</div>
@@ -193,7 +193,7 @@
 									<div class="synk-slider__nav"></div>
 								</div>
 							</div>
-							<div class="synk-slider__item">
+							<div class="synk-slider__item" tabindex="0">
 								<div class="synk-top__pic">
 									<img  class="synk-top__img" src="static/img/content/1-2.png" alt="pic">
 								</div>
@@ -209,7 +209,7 @@
 									<div class="synk-slider__nav"></div>
 								</div>
 							</div>
-							<div class="synk-slider__item">
+							<div class="synk-slider__item" tabindex="0">
 								<div class="synk-top__pic">
 									<img  class="synk-top__img" src="static/img/content/1-3.png" alt="pic">
 								</div>
@@ -225,7 +225,7 @@
 									<div class="synk-slider__nav"></div>
 								</div>
 							</div>
-							<div class="synk-slider__item">
+							<div class="synk-slider__item" tabindex="0">
 								<div class="synk-top__pic">
 									<img  class="synk-top__img" src="static/img/content/1-4.png" alt="pic">
 								</div>
@@ -241,7 +241,7 @@
 									<div class="synk-slider__nav"></div>
 								</div>
 							</div>
-							<div class="synk-slider__item">
+							<div class="synk-slider__item" tabindex="0">
 								<div class="synk-top__pic">
 									<img  class="synk-top__img" src="static/img/content/1-5.png" alt="pic">
 								</div>
@@ -260,9 +260,9 @@
 						</div>
 
 					</div>
-					<div class="partners hide-1020">
-						<h6 class="title__r">IN Collaboration WITH</h6>
-						<div class="partners__pictures">
+					<div class="partners hide-1020" tabindex="0">
+						<h6 class="title__r" tabindex="0">IN Collaboration WITH</h6>
+						<div class="partners__pictures" tabindex="0">
 							<a href="#" class="partners__link">
 								<img src="static/img/content/partner-1.png" alt="partner pic" class="partners__img">
 							</a>
@@ -282,18 +282,18 @@
 
 			<div class="section section-gray mod_s">
 				<!-- tab -->
-				<div class="page-tab">
+				<div class="page-tab" tabindex="0">
 					<div class="layout layout__large">
-						<h3 class="title__y">News, Publications & Blog</h3>
+						<h3 class="title__y" tabindex="0">News, Publications & Blog</h3>
 						<button class="page-tab_btn"></button>
 					</div>
 				</div>
 				<!-- News, Publications & Blog -->
 				<div class="section section__s js-parent">
-					<div class="layout layout__wide">
-						<h3 class="title__y">News, Publications & Blog</h3>
+					<div class="layout layout__wide" tabindex="0">
+						<h3 class="title__y" tabindex="0">News, Publications & Blog</h3>
 
-						<div class="section__nav section__nav_right ">
+						<div class="section__nav section__nav_right " tabindex="0">
 							<button class="section__nav_button section__nav_prev">
 								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
 							</button>
@@ -303,8 +303,8 @@
 						</div>
 
 					
-					<div class="third-slider">
-						<div class="news mod-purpur">
+					<div class="third-slider" tabindex="0">
+						<div class="news mod-purpur" tabindex="0">
 							<a href="#" class="news__pic">
 								<img src="static/img/content/news-1.png" alt="news picture" class="news__img">
 							</a>
@@ -329,7 +329,7 @@
 							</div>
 						</div>
 					
-						<div class="news mod-orange">
+						<div class="news mod-orange" tabindex="0">
 							<a href="#" class="news__pic">
 								<img src="static/img/content/news-1.png" alt="news picture" class="news__img">
 							</a>
@@ -353,7 +353,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="news mod-yellow">
+						<div class="news mod-yellow" tabindex="0">
 							<a href="#" class="news__pic">
 								<img src="static/img/content/news-1.png" alt="news picture" class="news__img">
 							</a>
@@ -377,7 +377,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="news mod-yellow">
+						<div class="news mod-yellow" tabindex="0">
 							<a href="#" class="news__pic">
 								<img src="static/img/content/news-1.png" alt="news picture" class="news__img">
 							</a>
@@ -406,18 +406,18 @@
 				</div>
 
 				<!-- tab -->
-				<div class="page-tab">
+				<div class="page-tab" tabindex="0">
 					<div class="layout layout__large">
-						<h3 class="title__y">Featured Events</h3>
+						<h3 class="title__y" tabindex="0">Featured Events</h3>
 						<button class="page-tab_btn"></button>
 					</div>
 				</div>
 				<!-- Featured Events -->
-				<div class="section section__s js-parent">
+				<div class="section section__s js-parent" tabindex="0">
 					<div class="layout layout__wide">
-						<h3 class="title__y">Featured Events</h3>
+						<h3 class="title__y" tabindex="0">Featured Events</h3>
 
-						<div class="section__nav section__nav_right ">
+						<div class="section__nav section__nav_right " tabindex="0">
 							<button class="section__nav_button section__nav_prev">
 								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
 							</button>
@@ -427,8 +427,8 @@
 						</div>
 
 						
-						<div class="single-slider">
-							<div class="event">
+						<div class="single-slider" tabindex="0">
+							<div class="event" tabindex="0">
 								<div class="event__user">
 									<img src="static/img/content/event.jpg" alt="event" class="event__user_img">
 								</div>
@@ -453,11 +453,11 @@
 									<div class="event__text">
 										<h3 class="title__m">Dan Ariely Presents: Why do people with diabetes (and you) make poor health choices​?</h3>
 										<p class="desc__d">Dan Ariely, Envolve Center faculty director and James B. Duke Professor of Psychology and Behavioral Economics at Duke University, presented his research findings from a comprehensive survey conducted with 1,000 adults with type 2 diabetes. Dan discussed the factors that drive decision making and their impact on diabetes self-care behaviors and health outcomes. The 45-minute presentation was followed by a 15-minute Q&A.</p>
-										<button class="btn btn-purpur">REad more</button>
+										<button class="btn btn-purpur" aria-label="read more">REad more</button>
 									</div>
 								</div>
 							</div>
-							<div class="event">
+							<div class="event" tabindex="0">
 								<div class="event__user">
 									<img src="static/img/content/event.jpg" alt="event" class="event__user_img">
 								</div>
@@ -489,19 +489,19 @@
 						</div>					</div>
 				</div>
 				<!-- tab -->
-				<div class="page-tab">
+				<div class="page-tab" tabindex="0">
 					<div class="layout layout__large">
-						<h3 class="title__y">Annual Report</h3>
+						<h3 class="title__y" tabindex="0">Annual Report</h3>
 						<button class="page-tab_btn"></button>
 					</div>
 				</div>
 				<!-- Annual Report -->
-				<div class="section section__s js-parent">
+				<div class="section section__s js-parent" tabindex="0">
 					<div class="layout layout__wide">
-						<h3 class="title__y">Annual Report</h3>
+						<h3 class="title__y" tabindex="0">Annual Report</h3>
 
-						<div class="assets">
-							<div class="assets__text">
+						<div class="assets" tabindex="0">
+							<div class="assets__text" tabindex="0">
 								<h3 class="title__o">A Look at the <br> Center’s Evolution</h3>
 								<p class="desc__d">Our accomplishments, collaborations, and successes; a true testament to the power of industry-academic partnerships.</p>
 								<div class="assets__footer">
@@ -511,7 +511,7 @@
 								</div>
 							</div>
 
-							<div class="assets__label">
+							<div class="assets__label" tabindex="0">
 								<img src="static/img/content/report.png" alt="book">
 							</div>
 						</div>
@@ -519,20 +519,20 @@
 					</div>
 				</div>
 
-				<div class="partners show-1020">
-					<h6 class="title__r">IN Collaboration WITH</h6>
+				<div class="partners show-1020" tabindex="0">
+					<h6 class="title__r" tabindex="0">IN Collaboration WITH</h6>
 					<div class="partners__pictures">
 						<a href="#" class="partners__link">
-							<img src="static/img/content/partner-1.png" alt="partner pic" class="partners__img">
+							<img src="static/img/content/partner-1.png" alt="envolve" class="partners__img">
 						</a>
 						<a href="#" class="partners__link">
-							<img src="static/img/content/partner-2.png" alt="partner pic" class="partners__img">
+							<img src="static/img/content/partner-2.png" alt="washington university in st.luis" class="partners__img">
 						</a>
 						<a href="#" class="partners__link">
-							<img src="static/img/content/partner-3.png" alt="partner pic" class="partners__img">
+							<img src="static/img/content/partner-3.png" alt="Duke university" class="partners__img">
 						</a>
 						<a href="#" class="partners__link">
-							<img src="static/img/content/partner-4.png" alt="partner pic" class="partners__img">
+							<img src="static/img/content/partner-4.png" alt="centene corporation" class="partners__img">
 						</a>
 					</div>
 				</div>
@@ -540,26 +540,26 @@
 			</div>
 
 
-			<footer class="footer">
+			<footer class="footer" tabindex="0">
 				<div class="parallax">
 					<div class="parallax_fix"  style='background-image: url(static/img/general/footer.png);'></div>
 				</div>
 				<div class="layout layout__wide">
 					<div class="footer__top">
-						<div class="subscription">
+						<div class="subscription" tabindex="0">
 							<h6 class="title__i">Newsletter sign up</h6>
 							<h4 class="title__o">Stay Updated</h4>
 							<form method="post" action="/" class="subscription__form">
 								<div class="subscription__field">
-									<input class="subscription__input" type="email" name="subscriptionMail" id="subscriptionMail" placeholder="Email Address" >
+									<input class="subscription__input" type="email" name="subscriptionMail" id="subscriptionMail" placeholder="Email Address" role="subscribe" >
 									<button class="btn btn-white">sing up</button>
 								</div>
 							</form>
 						</div>
 					</div>
 			
-					<div class="footer__bottom">
-						<div class="footer__col footer__col_first">
+					<div class="footer__bottom" >
+						<div class="footer__col footer__col_first" tabindex="0">
 							<a href="./" class="footer__logo"><img src="static/img/general/logo.png" alt="logo"></a>
 							<div class="copy">&copy; 2018 CENTENE CORPORATION</div>
 							<div class="footer__col_content">
@@ -568,14 +568,14 @@
 								<a href="#" class="footer__link">Site Map</a>
 							</div>
 						</div>
-						<div class="footer__col">
+						<div class="footer__col"  tabindex="0">
 							<h6 class="footer__title">About Us</h6>
 							<a href="#" class="footer__link">History</a>
 							<a href="#" class="footer__link">Vision</a>
 							<a href="#" class="footer__link">Faculty</a>
 							<a href="#" class="footer__link">Partners</a>
 						</div>
-						<div class="footer__col">
+						<div class="footer__col"  tabindex="0">
 							<h6 class="footer__title">Our Research</h6>
 							<a href="#" class="footer__link">Lifestyle Innovations</a>
 							<a href="#" class="footer__link">Behavioral Economics</a>
@@ -583,14 +583,14 @@
 							<a href="#" class="footer__link">Health Communications</a>
 							<a href="#" class="footer__link">TBD</a>
 						</div>
-						<div class="footer__col">
+						<div class="footer__col"  tabindex="0">
 							<h6 class="footer__title">Learn More</h6>
 							<a href="#" class="footer__link">News</a>
 							<a href="#" class="footer__link">Blog</a>
 							<a href="#" class="footer__link">Events</a>
 							<a href="#" class="footer__link">Publications</a>
 						</div>
-						<div class="footer__col">
+						<div class="footer__col"  tabindex="0">
 							<h6 class="footer__title">Connect With Us</h6>
 							<a href="#" class="footer__link">Contact Us</a>
 							<a href="#" class="footer__link">Call For Proposals</a>

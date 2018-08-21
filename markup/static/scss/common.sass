@@ -1,7 +1,6 @@
 
 *
 	box-sizing: border-box
-	outline: none
 	&:after,
 	&:before
 		box-sizing: inherit
@@ -32,6 +31,8 @@ button
 	border: none
 	cursor: pointer
 	background-color: $n
+	&:focus
+		box-shadow: 0 0 20px red
 
 
 h1, h2, h3, h4, h5, h6
@@ -141,6 +142,8 @@ p
 			top: 0
 			right: 20px
 			z-index: 3
+	&-video
+		background: url(../img/general/logo-bg-white-op.svg) 150% -20px no-repeat, url(../img/general/logo-bg-white-op.svg) -75% 20px no-repeat
 
 .title
 	&__t
@@ -287,6 +290,7 @@ p
 
 .mission
 	padding: 40px 0
+	background: #fff url(../img/general/logo-bg-op4.svg) 125% -125px no-repeat
 	+r(768)
 		text-align: center
 	&__pic

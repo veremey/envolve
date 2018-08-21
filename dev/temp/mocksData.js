@@ -1,4 +1,4 @@
-'footer': {},
+'startscreen': {},
 
 'head': {
     defaults: {
@@ -7,7 +7,7 @@
     }
 },
 
-'startscreen': {},
+'footer': {},
 
 'synk-slider': {},
 
