@@ -1,13 +1,13 @@
 'startscreen': {},
 
+'footer': {},
+
 'head': {
     defaults: {
         title: 'Envolve center',
         useSocialMetaTags: false
     }
 },
-
-'footer': {},
 
 'synk-slider': {},
 

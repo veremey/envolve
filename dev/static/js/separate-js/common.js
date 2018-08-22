@@ -17,6 +17,10 @@ $(document).ready(function () {
 
 	});
 
+
+
+	// $('.synk-slider').prepend($dots);
+
 	// Global.initParallax({
 	// 	parent: '#parallax'
 	// });
@@ -38,6 +42,14 @@ $(document).ready(function () {
 		Global.dotsSlider({
 			slider: '.synk-slider'
 		});
+
+		// -----------------------------------------
+		//* --- replace slick dots before slider
+
+		var $dots = $('.synk-slider').find('.slick-dots');
+		$('.synk-slider').prepend($dots);
+
+
 
 		Global.simpleSlider({
 			slider: '.single-slider',

@@ -44,6 +44,8 @@
 								<img src="static/img/general/logo.png" alt="logo" class="header__logo_img">
 							</a>
 						
+							<a class="header__skip" href="#startscreen__content">skip header content</a>
+						
 							<button class="burger" aria-label="open or hide menu"><i></i></button>
 						
 							<div class="header__wrap" >
@@ -68,7 +70,7 @@
 						
 							</div>
 						</div>
-						<div class="startscreen__content"  tabindex="0">
+						<div id="startscreen__content" class="startscreen__content"  tabindex="0">
 							<h4 class="title__i">COMMUNITY HEALTH CATALYST</h4>
 							<h3 class="title__t">Translational research that convenes industry and academic experts for real-world impact.</h3>
 							<button class="btn btn-purpur"  tabindex="0">Research Focus Areas</button>
@@ -166,11 +168,11 @@
 					<p class="desc__d">The Envolve Center <sup>&#8482;</sup> is a <b>community-corporate-academic healthcare partnership</b> that advances <b>life-centric health research</b> to improve lives so communities can thrive. <b>A leading model of collaboration</b> that applies research findings for real-world impact, the Center is a true testament to the value of designing innovative and evidence-based healthcare interventions that translate to the enhanced delivery of managed care. </p>
 
 					<div class="box">
-						<div class="section__nav section__nav_right " tabindex="0">
-							<button class="section__nav_button section__nav_prev">
+						<div class="section__nav section__nav_right " >
+							<button class="section__nav_button section__nav_prev" aria-live="assertive" tabindex="-1" >
 								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
 							</button>
-							<button class="section__nav_button section__nav_next">
+							<button class="section__nav_button section__nav_next"  aria-live="assertive" tabindex="-1" >
 								<img src="static/img/general/arrow.svg" alt="next" class="section__nav_img">
 							</button>
 						</div>
@@ -179,7 +181,7 @@
 						<div class="synk-slider " tabindex="0">
 							<div class="synk-slider__item" tabindex="0">
 								<div class="synk-top__pic">
-									<img  class="synk-top__img" src="static/img/content/1-1.png" alt="pic">
+									<img  class="synk-top__img" src="static/img/content/1-1.png" alt="engagement">
 								</div>
 								<div class="synk-slider__pic">
 									<img src="static/img/content/2-3.jpg" alt="pic">
@@ -195,7 +197,7 @@
 							</div>
 							<div class="synk-slider__item" tabindex="0">
 								<div class="synk-top__pic">
-									<img  class="synk-top__img" src="static/img/content/1-2.png" alt="pic">
+									<img  class="synk-top__img" src="static/img/content/1-2.png" alt="health outcomes">
 								</div>
 								<div class="synk-slider__pic">
 									<img src="static/img/content/2-3.jpg" alt="pic">
@@ -211,7 +213,23 @@
 							</div>
 							<div class="synk-slider__item" tabindex="0">
 								<div class="synk-top__pic">
-									<img  class="synk-top__img" src="static/img/content/1-3.png" alt="pic">
+									<img  class="synk-top__img" src="static/img/content/1-3.png" alt="behaviors">
+								</div>
+								<div class="synk-slider__pic">
+									<img src="static/img/content/2-3.jpg" alt="behaviors">
+								</div>
+								<div class="synk-slider__content">
+									<div class="synk-slider__text">
+										<h3 class="title__e">Health Communications</h3>
+										<p class="desc__d">Determine the most effective strategies for encouraging Medicaid recipients and their family members to participate in local evidence-based health programs.</p>
+										<button class="btn btn-purpur">Read more</button>
+									</div>
+									<div class="synk-slider__nav"></div>
+								</div>
+							</div>
+							<div class="synk-slider__item" tabindex="0">
+								<div class="synk-top__pic">
+									<img  class="synk-top__img" src="static/img/content/1-4.png" alt="social determinants">
 								</div>
 								<div class="synk-slider__pic">
 									<img src="static/img/content/2-3.jpg" alt="pic">
@@ -227,23 +245,7 @@
 							</div>
 							<div class="synk-slider__item" tabindex="0">
 								<div class="synk-top__pic">
-									<img  class="synk-top__img" src="static/img/content/1-4.png" alt="pic">
-								</div>
-								<div class="synk-slider__pic">
-									<img src="static/img/content/2-3.jpg" alt="pic">
-								</div>
-								<div class="synk-slider__content">
-									<div class="synk-slider__text">
-										<h3 class="title__e">Health Communications</h3>
-										<p class="desc__d">Determine the most effective strategies for encouraging Medicaid recipients and their family members to participate in local evidence-based health programs.</p>
-										<button class="btn btn-purpur">Read more</button>
-									</div>
-									<div class="synk-slider__nav"></div>
-								</div>
-							</div>
-							<div class="synk-slider__item" tabindex="0">
-								<div class="synk-top__pic">
-									<img  class="synk-top__img" src="static/img/content/1-5.png" alt="pic">
+									<img  class="synk-top__img" src="static/img/content/1-5.png" alt="healthcare service delivery">
 								</div>
 								<div class="synk-slider__pic">
 									<img src="static/img/content/2-3.jpg" alt="pic">
@@ -293,11 +295,11 @@
 					<div class="layout layout__wide" tabindex="0">
 						<h3 class="title__y" tabindex="0">News, Publications & Blog</h3>
 
-						<div class="section__nav section__nav_right " tabindex="0">
-							<button class="section__nav_button section__nav_prev">
+						<div class="section__nav section__nav_right " >
+							<button class="section__nav_button section__nav_prev" aria-live="assertive" tabindex="-1" >
 								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
 							</button>
-							<button class="section__nav_button section__nav_next">
+							<button class="section__nav_button section__nav_next"  aria-live="assertive" tabindex="-1" >
 								<img src="static/img/general/arrow.svg" alt="next" class="section__nav_img">
 							</button>
 						</div>
@@ -417,11 +419,11 @@
 					<div class="layout layout__wide">
 						<h3 class="title__y" tabindex="0">Featured Events</h3>
 
-						<div class="section__nav section__nav_right " tabindex="0">
-							<button class="section__nav_button section__nav_prev">
+						<div class="section__nav section__nav_right " >
+							<button class="section__nav_button section__nav_prev" aria-live="assertive" tabindex="-1" >
 								<img src="static/img/general/arrow.svg" alt="prev" class="section__nav_img">
 							</button>
-							<button class="section__nav_button section__nav_next">
+							<button class="section__nav_button section__nav_next"  aria-live="assertive" tabindex="-1" >
 								<img src="static/img/general/arrow.svg" alt="next" class="section__nav_img">
 							</button>
 						</div>
