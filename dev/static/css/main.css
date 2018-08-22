@@ -546,8 +546,7 @@ button {
 
 a:focus,
 button:focus {
-  -webkit-box-shadow: 0 0 20px red;
-          box-shadow: 0 0 20px red;
+  border-bottom: 3px ridge red;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -736,7 +735,7 @@ p {
 }
 
 .section-video {
-  background: url(../img/general/logo-bg-white-op.svg) 150% -20px no-repeat, url(../img/general/logo-bg-white-op.svg) -75% 20px no-repeat;
+  background: url(../img/general/logo-bg-white-op.svg) 120% 20px no-repeat, url(../img/general/logo-bg-white-op.svg) -25% 500px no-repeat;
 }
 
 .title__t {
@@ -1514,6 +1513,7 @@ p {
 }
 
 .header__skip {
+  position: absolute;
   display: block;
   width: 0;
   height: 0;
@@ -2098,6 +2098,12 @@ p {
   vertical-align: top;
 }
 
+@media only screen and (max-width: 1120px) {
+  .synk-slider .slick-dots li {
+    max-width: 20%;
+  }
+}
+
 .synk-slider .slick-dots .slick-active .tab {
   padding: 20px 40px;
   border-bottom: 2px solid #F47022;
@@ -2108,14 +2114,40 @@ p {
           transform: scale(1.1);
 }
 
+@media only screen and (max-width: 1120px) {
+  .synk-slider .slick-dots .slick-active .tab {
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .synk-slider .slick-dots .slick-active .tab {
+    padding: 5px 10px;
+  }
+}
+
 .synk-slider .slick-dots .slick-active .tab img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
+@media only screen and (max-width: 1000px) {
+  .synk-slider .slick-dots .slick-active .tab img {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
 .synk-slider .slick-dots .tab {
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+@media only screen and (max-width: 1000px) {
+  .synk-slider .slick-dots .tab img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 
 .synk-top__pic {

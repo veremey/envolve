@@ -23,6 +23,8 @@
 		li
 			display: inline-block
 			vertical-align: top
+			+r(1120)
+				max-width: 20%
 		.slick-active
 			.tab
 				padding: 20px 40px
@@ -30,10 +32,19 @@
 				background-color: #fff
 				box-shadow: 0 0 20px rgba(0, 0, 0, .4)
 				+scale(1.1)
+				+r(1120)
+					padding: 10px 20px
+				+r(1000)
+					padding: 5px 10px
 				img
 					+scale(1.1)
+					+r(1000)
+						+scale(.9)
 		.tab
 			+tr(.4s)
+			img
+				+r(1000)
+					+scale(.8)
 
 .synk
 	&-top

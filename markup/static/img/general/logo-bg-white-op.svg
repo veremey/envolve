@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="200" height="220" viewBox="0 0 580 543.105" style="enable-background:new 0 0 580 543.105;" xml:space="preserve">
+	 width="400" height="440" viewBox="0 0 580 543.105" style="enable-background:new 0 0 580 543.105;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill: none;}
-	.st1{fill:none;stroke:#EFEFEF;}
-	.st2{fill:#fff;}
-	*{opacity: .6}
+	<div class="st0">fill: none;</div>
+	.st1{fill:none;stroke:none;}
+	.st2{fill:#fff;opacity: .2}
 </style>
-<g>
-	<polygon id="path-3" class="st0" points="3.861,0 576.218,0 576.218,543.105 3.861,543.105 	"/>
-</g>
 
 <g id="Group-17">
 	<g>

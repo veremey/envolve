@@ -42,10 +42,8 @@ $(document).ready(function () {
 		Global.dotsSlider({
 			slider: '.synk-slider'
 		});
-
 		// -----------------------------------------
 		//* --- replace slick dots before slider
-
 		var $dots = $('.synk-slider').find('.slick-dots');
 		$('.synk-slider').prepend($dots);
 
@@ -126,17 +124,17 @@ $(document).ready(function () {
 
 /*-   resize doc  -*/
 
-$(window).on('resize', function () {
+// $(window).on('resize', function () {
 
-	Global.simpleSlider({
-		slider: '.startscreen-slider',
-		sliderItem: '.startscreen-slider__item'
-	});
-
-
-	Global.dotsSlider({
-		slider: '.synk-slider'
-	});
+// 	Global.simpleSlider({
+// 		slider: '.startscreen-slider',
+// 		sliderItem: '.startscreen-slider__item'
+// 	});
 
 
-});
+// 	Global.dotsSlider({
+// 		slider: '.synk-slider'
+// 	});
+
+
+// });

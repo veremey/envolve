@@ -1,5 +1,3 @@
-'startscreen': {},
-
 'footer': {},
 
 'head': {
@@ -8,6 +6,8 @@
         useSocialMetaTags: false
     }
 },
+
+'startscreen': {},
 
 'synk-slider': {},
 
