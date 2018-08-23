@@ -3,11 +3,16 @@
 	width: calc(100% + 30px)
 	.slick-slide
 		margin-left: 30px
+	.event
+		margin-bottom: 0
 
 .event
 	background: #fff
 	display: flex!important
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.03);
+	margin-bottom: 40px
+	+r(650)
+		margin-bottom: 20px
 	&__user
 		position: relative
 		flex: 0 0 500px
@@ -43,6 +48,17 @@
 			+tr(.4s)
 	&__text
 		padding: 20px 40px 45px
+	&__line
+		width: 100%
+		height: 74px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		border-bottom: 2px solid #E5E5E5
+		.title__m
+			color: #000
+		.title__p
+			color: #AC218E
 
 
 	.title__m

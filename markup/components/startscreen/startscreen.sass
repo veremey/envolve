@@ -1,5 +1,6 @@
 
-.startscreen
+.startscreen,
+.contentscreen
 	position: relative
 	display: block
 	height: 100vh
@@ -17,6 +18,8 @@
 		padding-bottom: 80px
 		+r(768)
 			padding-bottom: 30px
+	&__text
+		margin-bottom: 40px
 	.layout
 		height: 100%
 	.title__i
@@ -79,3 +82,10 @@
 		z-index: 100
 
 
+.contentscreen
+	height: 620px
+	.title__t
+		margin-bottom: 30px
+	.startscreen__content
+		width: 96%
+		max-width: 520px

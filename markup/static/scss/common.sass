@@ -96,7 +96,6 @@ p
 			font-size: 20px
 			line-height: .9
 
-
 .layout
 	position: relative
 	&__wide
@@ -144,8 +143,26 @@ p
 			z-index: 3
 	&-video
 		background: url(../img/general/logo-bg-white-op.svg) 120% 20px no-repeat, url(../img/general/logo-bg-white-op.svg) -25% 500px no-repeat
+	&-area
+		.layout
+			width: 100%
+			max-width: 630px
+			text-align: center
+		.btn
+			+ab
+
+
 
 .title
+	&__x
+		font-size: 54px
+		color: #fff
+		line-height: 1.2
+		+acr
+		+r(1020)
+			font-size: 32px
+		+r(650)
+			font-size: 20px
 	&__t
 		font-size: 50px
 		color: #fff
@@ -415,16 +432,20 @@ p
 	.title__o
 		color: #000
 
-
 .slick-disabled
 	opacity: .4
 	cursor: default
 
+.is-center
+	text-align: center
 
 .mod_s
 	padding: 70px 0 90px
 	+r(768)
 		padding: 0px 0 40px
+
+.mod-mt30
+	margin-top: 30px
 
 .col-48
 	width: 48%
@@ -446,6 +467,9 @@ p
 	display: none
 	+r(768)
 		display: block
+
+.text-purpur
+	color: $purpur
 
 .section-purpur
 	background-color: $purpur
