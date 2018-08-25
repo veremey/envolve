@@ -7,14 +7,26 @@
 
 .news.mod-yellow
 	--color: #FAA619
+.news.mod-green
+	--color: #4ED24D
 
 .third-slider
 	&.slick-slider
 		margin-left: -40px
 	.slick-slide
 		margin-left: 40px
+	.news
+		display: block
+		width: 100%
+		margin: 0
+
 .news
-	display: block
+	display: inline-block
+	vertical-align: top
+	width: calc(33.3333% - 36px)
+	margin: 0 0 30px 36px
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.03);
+
 	&__pic
 		position: relative
 		height: 320px
@@ -38,7 +50,7 @@
 	&__arrow
 		position: absolute
 		top: -23px
-		right: 80px
+		right: 30px
 		display: inline-block
 		vertical-align: top
 		width: 46px
@@ -78,3 +90,11 @@
 	.title__m,
 	.desc__d
 		+tr(.4s)
+
+
+.wrap
+	.news
+		+r(1000)
+			width: calc(50% - 36px)
+		+r(768)
+			width: calc(100% - 36px)

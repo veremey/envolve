@@ -148,7 +148,6 @@ function GlobalClass() {
 	}
 
 	/*- four slider  -*/
-
 	this.fourSlider = function (opt) {
 		var slider = $(opt.slider);
 
@@ -186,8 +185,8 @@ function GlobalClass() {
 				slidesToShow: 3,
 				slidesToScroll: 1,
 				infinite: false,
-				prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
-				nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
+				prevArrow: slider.parents('.js-parent').find('.section__nav_prev'),
+				nextArrow: slider.parents('.js-parent').find('.section__nav_next'),
 				responsive: [
 					{
 						breakpoint: 1024,
