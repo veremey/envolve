@@ -1,4 +1,22 @@
 var data = {contentscreen: {
+	Annual_Reports: {
+		title: 'Annual Reports',
+		desc: '',
+		btn: 'Read More',
+		parallax: 'cont-3.jpg'
+	},
+	Advisory_Committee: {
+		title: 'Advisory Committee',
+		desc: "Our Advisory Committee is made up of a transdisciplinary team of health professionals, industry leaders, researchers and entrepreneurs—all passionate about translating groundbreaking research into best practices",
+		btn: 'Read More',
+		parallax: 'cont-3.jpg'
+	},
+	meettheteam: {
+		title: 'Meet the Team',
+		desc: "",
+		btn: 'Read More',
+		parallax: 'cont-2.jpg'
+	},
 	about: {
 		title: 'About Us',
 		desc: "The Envolve Center for Health Behavior Change is a unique academic-industry collaboration between the Brown aThe Center is a Community-Industry-Academic Healthcare Partnership that advances life-centric health solutions to improve lives so that communities can thrive.",

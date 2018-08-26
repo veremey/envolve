@@ -1,6 +1,5 @@
 
-.startscreen,
-.contentscreen
+.startscreen
 	position: relative
 	display: block
 	height: 100vh
@@ -8,7 +7,9 @@
 	&:after
 		content: ''
 		+coverdiv
-		+g(rgba(0, 0, 0, .2), rgba(0,0,0,0.67))
+		background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) 77%, rgba(0, 0, 0, 0.8) 86%, rgba(0, 0, 0, 1) 100%)
+		background-image: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) 77%, rgba(0, 0, 0, 0.8) 86%, rgba(0, 0, 0, 1) 100%)
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) 77%, rgba(0, 0, 0, 0.8) 86%, rgba(0, 0, 0, 1) 100%)
 		pointer-events: none
 	&__wrap
 		position: relative
@@ -25,6 +26,7 @@
 	.title__i
 		opacity: .75
 	.title__t
+		width: 56%
 		margin-bottom: 60px
 		+r(1020)
 			line-height: 1.6
@@ -48,6 +50,7 @@
 		justify-content: space-between
 		padding-top: 35px
 		border-top: 2px solid rgba(255, 255, 255, .2)
+
 		z-index: 10
 		&__item
 			display: inline-block
@@ -80,9 +83,12 @@
 		top: 20px
 		right: 0
 		z-index: 100
+	.btn
+		width: 200px
 
 
 .contentscreen
+	@extend .startscreen
 	height: 620px
 	.title__t
 		margin-bottom: 30px

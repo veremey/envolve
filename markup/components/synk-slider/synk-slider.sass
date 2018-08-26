@@ -31,7 +31,8 @@
 				border-bottom: 2px solid #F47022
 				background-color: #fff
 				box-shadow: 0 0 20px rgba(0, 0, 0, .4)
-				+scale(1.1)
+				// +scale(1.1)
+				transform: translateY(-16%) scale(1.1)
 				+r(1120)
 					padding: 10px 20px
 				+r(1000)
@@ -40,7 +41,12 @@
 					+scale(1.1)
 					+r(1000)
 						+scale(.9)
+				.synk-top__desc
+					font-size: 16px
+
 		.tab
+			display: flex
+			align-items: center
 			+tr(.4s)
 			img
 				+r(1000)
@@ -53,6 +59,10 @@
 		&__img
 			max-width: 100%
 			max-height: 100%
+			margin-right: 16px
+		&__desc
+			font-size: 16px
+			text-align: left
 
 	&-slider
 		&__item
@@ -72,6 +82,7 @@
 				width: calc(100% - 80px)
 			.btn
 				margin-top: 40px
+				width: 150px
 
 .slick-current
 	.synk-top__pic
@@ -80,4 +91,7 @@
 		border-bottom: 2px solid #f47022
 	.synk-top__img
 		transform: translate3d(0, 0, 0) scale(1.2)
+		margin-right: 16px
+
+
 
