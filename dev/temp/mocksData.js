@@ -1,12 +1,3 @@
-'footer': {},
-
-'head': {
-    defaults: {
-        title: 'Envolve center',
-        useSocialMetaTags: false
-    }
-},
-
 'contentscreen': {
 	Annual_Reports: {
 		title: 'Annual Reports',
@@ -46,9 +37,18 @@
 	}
 },
 
-'synk-slider': {},
+'footer': {},
+
+'head': {
+    defaults: {
+        title: 'Envolve center',
+        useSocialMetaTags: false
+    }
+},
 
 'startscreen': {},
+
+'synk-slider': {},
 
 __pages: [{
                 name: 'about',

@@ -2,11 +2,26 @@
 
 $(document).ready(function () {
 
-
-
 	if (typeof window.document.createElement('div').style.webkitLineClamp !== 'undefined') {
 	    document.querySelector('html').classList.add('webkit-line-clamp');
 	}
+
+	var zoom = detectZoom.zoom();
+	if(zoom > 1.5) {
+		$('.section__s').css({
+			'display': 'none'
+		});
+		$('.page-tab').css({
+			'display': 'block'
+		});
+		$('.mod_s').css({'padding': '0 0 40px'})
+	}
+
+	$('.header__skip').click(function (e) {
+		e.preventDefault();
+		var goTo = $(this).attr('href');
+		$('#' + goTo).focus();
+	});
 
 	$('.page-tab').click(function () {
 		var $this = $(this);
@@ -90,6 +105,21 @@ $(document).ready(function () {
 		$('.header__wrap').addClass('is-active');
 		$('.search__input').val('');
 	});
+
+	// slick arrow focus function
+
+	$('body').keyup(function(e) {
+	   var code = e.keyCode || e.which;
+	   if (code == '9') {
+	    if($('.slick-arrow').is(':focus')){
+	    	var $this = $(':focus');
+	    	// console.log($this.attr('class'));
+	    	$this.attr('aria-live', 'assertive');
+	    	$this.attr('tabindex', '-1');
+	    }
+	   }
+	});
+
 
 
 	$(document).on('click touchstart ', function(e) {

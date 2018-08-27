@@ -112,7 +112,8 @@ function GlobalClass() {
 			nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
 			dots: true,
 			customPaging: function(slider, i) {
-			return '<button class="tab">' + $(slider.$slides[i]).find('.synk-top__pic').html() + '</button>';
+				var $attr = $(slider.$slides[i]).find('.synk-top__desc').text();
+			return '<button class="tab" role="button" >' + $(slider.$slides[i]).find('.synk-top__pic').html() + '</button>';
 			},
 			responsive: [
 				{
@@ -138,6 +139,7 @@ function GlobalClass() {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				initialSlide: $initialSlide,
+				adaptiveHeight: true,
 				infinite: false,
 				prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
 				nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
