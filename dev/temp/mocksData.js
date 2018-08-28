@@ -1,4 +1,10 @@
 'contentscreen': {
+	eventsSingle: {
+		title: 'Events',
+		desc: '',
+		btn: 'Read More',
+		parallax: 'cont-2.jpg'
+	},
 	Annual_Reports: {
 		title: 'Annual Reports',
 		desc: '',

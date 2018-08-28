@@ -847,27 +847,35 @@ p {
   }
 }
 
-.mainsingle {
+.mainsingle,
+.mainmedium {
   display: inline-block;
   vertical-align: top;
   width: calc(100% - 440px);
 }
 
 @media only screen and (max-width: 1020px) {
-  .mainsingle {
+  .mainsingle,
+  .mainmedium {
     width: 100%;
     margin-bottom: 30px;
   }
 }
 
-.mainsingle .title__o {
+.mainsingle .title__o,
+.mainmedium .title__o {
   font-family: 'adelle_sans_regular', Arial, sans-serif;
 }
 
-.mainsingle .desc__m {
+.mainsingle .desc__m,
+.mainmedium .desc__m {
   color: #565E68;
   line-height: 1.9;
   margin-bottom: 1.8em;
+}
+
+.mainmedium {
+  width: calc(100% - 400px);
 }
 
 .mainhalf .section {
@@ -1512,6 +1520,16 @@ p {
   margin-top: 40px;
 }
 
+.mod-mb-80 {
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 650px) {
+  .mod-mb-80 {
+    margin-bottom: 40px;
+  }
+}
+
 .mod-mb-60 {
   margin-bottom: 60px;
 }
@@ -1528,16 +1546,6 @@ p {
 
 .mod-mb-30 {
   margin-bottom: 30px;
-}
-
-.mod-mb-80 {
-  margin-bottom: 80px;
-}
-
-@media only screen and (max-width: 650px) {
-  .mod-mb-80 {
-    margin-bottom: 40px;
-  }
 }
 
 .col-48 {
@@ -1643,7 +1651,8 @@ p {
   }
 }
 
-.asidesingle {
+.asidesingle,
+.asidemedium {
   display: inline-block;
   vertical-align: top;
   width: 100%;
@@ -1652,11 +1661,16 @@ p {
 }
 
 @media only screen and (max-width: 1020px) {
-  .asidesingle {
+  .asidesingle,
+  .asidemedium {
     width: 100%;
     max-width: 100%;
     padding: 0;
   }
+}
+
+.asidemedium {
+  max-width: 300px;
 }
 
 .aside-content {
@@ -2561,6 +2575,26 @@ p {
   font-family: 'adelle_sans_regular', Arial, sans-serif;
 }
 
+.mainmedium .event {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mainmedium .event__header, .mainmedium .event__text {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mainmedium .event__img {
+  margin-bottom: 20px;
+}
+
+.mainmedium .event .title__m {
+  font-size: 24px;
+  line-height: 1;
+  font-family: 'adellecyrillic', Arial, sans-serif;
+}
+
 .startscreen, .contentscreen {
   position: relative;
   display: block;
@@ -2706,6 +2740,12 @@ p {
 
 .contentscreen {
   height: 620px;
+}
+
+.contentscreen:after {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.7)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
 }
 
 .contentscreen .title__t {

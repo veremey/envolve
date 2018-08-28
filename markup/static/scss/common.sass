@@ -200,7 +200,8 @@ p
 	+r(1020)
 		flex-wrap: wrap
 
-.mainsingle
+.mainsingle,
+.mainmedium
 	display: inline-block
 	vertical-align: top
 	// width: calc(100% - 460px)
@@ -214,6 +215,9 @@ p
 		color: #565E68
 		line-height: 1.9
 		margin-bottom: 1.8em
+
+.mainmedium
+	width: calc(100% - 400px)
 
 .mainhalf
 	.section
@@ -604,6 +608,11 @@ p
 	margin-top: 30px
 .mod-mt40
 	margin-top: 40px
+
+.mod-mb-80
+	margin-bottom: 80px
+	+r(650)
+		margin-bottom: 40px
 .mod-mb-60
 	margin-bottom: 60px
 	+r(650)
@@ -613,10 +622,6 @@ p
 .mod-mb-30
 	margin-bottom: 30px
 
-.mod-mb-80
-	margin-bottom: 80px
-	+r(650)
-		margin-bottom: 40px
 
 .col-48
 	width: 48%
