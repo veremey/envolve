@@ -78,6 +78,9 @@ __pages: [{
                 name: 'index',
                 href: 'index.html'
              },{
+                name: 'main-slider',
+                href: 'main-slider.html'
+             },{
                 name: 'main',
                 href: 'main.html'
              },{

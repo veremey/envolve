@@ -69,6 +69,12 @@ $(document).ready(function () {
 			sliderItem: '.event'
 		});
 
+
+		Global.designSlider({
+			slider: '.design-slider',
+			sliderItem: '.event'
+		});
+
 		Global.threeSlider({
 			slider: '.third-slider',
 			sliderItem: '.news'

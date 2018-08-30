@@ -149,6 +149,30 @@ function GlobalClass() {
 		}
 	}
 
+	/*- designSlider slider  -*/
+	this.designSlider = function (opt) {
+		var slider = $(opt.slider);
+		var sliderItem = $(opt.sliderItem);
+		var $initialSlide = 0 ;
+
+		if(sliderItem.length > 1) {
+			slider.each(function () {
+				$(this).slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				initialSlide: $initialSlide,
+				adaptiveHeight: true,
+				centerMode: true,
+				variableWidth: true,
+				infinite: false,
+				prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
+				nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
+
+				});
+			});
+		}
+	}
+
 	/*- four slider  -*/
 	this.fourSlider = function (opt) {
 		var slider = $(opt.slider);
