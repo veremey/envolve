@@ -2365,27 +2365,32 @@ p {
 }
 
 .single-slider,
-.design-slider {
+.design-slider,
+.designer-slider {
   margin-left: -30px;
   width: calc(100% + 30px);
 }
 
 .single-slider .slick-slide,
-.design-slider .slick-slide {
+.design-slider .slick-slide,
+.designer-slider .slick-slide {
   margin-left: 30px;
 }
 
 .single-slider .event,
-.design-slider .event {
+.design-slider .event,
+.designer-slider .event {
   margin-bottom: 0;
 }
 
-.design-slider {
+.design-slider,
+.designer-slider {
   margin-left: 0px;
   width: calc(100% + 0px);
 }
 
-.design-slider .event {
+.design-slider .event,
+.designer-slider .event {
   width: 1000px;
   margin: 0 auto;
   max-width: 94vw;

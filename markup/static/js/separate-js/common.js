@@ -74,6 +74,10 @@ $(document).ready(function () {
 			slider: '.design-slider',
 			sliderItem: '.event'
 		});
+		Global.designerSlider({
+			slider: '.designer-slider',
+			sliderItem: '.event'
+		});
 
 		Global.threeSlider({
 			slider: '.third-slider',
@@ -114,17 +118,17 @@ $(document).ready(function () {
 
 	// slick arrow focus function
 
-	$('body').keyup(function(e) {
-	   var code = e.keyCode || e.which;
-	   if (code == '9') {
-	    if($('.slick-arrow').is(':focus')){
-	    	var $this = $(':focus');
-	    	// console.log($this.attr('class'));
-	    	$this.attr('aria-live', 'assertive');
-	    	$this.attr('tabindex', '-1');
-	    }
-	   }
-	});
+	// $('body').keyup(function(e) {
+	//    var code = e.keyCode || e.which;
+	//    if (code == '9') {
+	//     if($('.slick-arrow').is(':focus')){
+	//     	var $this = $(':focus');
+	//     	// console.log($this.attr('class'));
+	//     	$this.attr('aria-live', 'assertive');
+	//     	$this.attr('tabindex', '-1');
+	//     }
+	//    }
+	// });
 
 
 
