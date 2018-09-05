@@ -127,8 +127,6 @@
 		vertical-align: top
 		+r(1020)
 			margin-bottom: 20px
-		// 	display: block
-		// 	text-align: center
 	&__link
 		text-transform: uppercase
 		display: inline-block
@@ -136,9 +134,10 @@
 		color: #fff
 		font-size: 14px
 		letter-spacing: .2em
-		+sr
+		+ar
 		+tr(.4s)
-		&:hover
+		&:hover,
+		&:focus
 			color: $purpur
 
 .nav

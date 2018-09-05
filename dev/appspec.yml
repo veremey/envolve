@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+   - source: /
+     destination: /home/ubuntu/codedeploy-envolve
+hooks:
+   BeforeInstall:
+    - location: deploy/stop_server.sh
+      runas: root
+   AfterInstall:
+    - location: deploy/change_permissions.sh
+      runas: root

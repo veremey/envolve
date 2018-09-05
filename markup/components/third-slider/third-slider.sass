@@ -9,6 +9,10 @@
 	--color: #FAA619
 .news.mod-green
 	--color: #4ED24D
+.news.mod-greenSea
+	--color: #01A3B4
+.news.mod-grapes
+	--color: #6950A1
 
 .third-slider
 	&.slick-slider
@@ -28,6 +32,10 @@
 	width: calc(33.3333% - 36px)
 	margin: 0 0 30px 36px
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.03);
+	+r(1020)
+		width: calc(50% - 36px)
+	+r(768)
+		width: calc(100% - 36px)
 
 	&__pic
 		position: relative
@@ -91,6 +99,8 @@
 	.title__m,
 	.desc__d
 		+tr(.4s)
+	.title__k
+		color: var(--color)
 
 
 .wrap

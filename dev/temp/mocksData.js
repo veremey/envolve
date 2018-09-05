@@ -1,9 +1,33 @@
 'contentscreen': {
+	partnership: {
+		title: 'Partnership Program (Research)',
+		desc: '',
+		btn: 'Read More',
+		parallax: 'cont-1.png'
+	},
+	partners: {
+		title: 'Partners',
+		desc: '',
+		btn: 'Read More',
+		parallax: 'cont-1.png'
+	},
+	Call_for_Proposals: {
+		title: 'Call for Proposals',
+		desc: '',
+		btn: 'Read More',
+		parallax: 'cont-1.png'
+	},
+	research: {
+		title: 'Research',
+		desc: '',
+		btn: 'Read More',
+		parallax: 'cont-1.png'
+	},
 	eventsSingle: {
 		title: 'Events',
 		desc: '',
 		btn: 'Read More',
-		parallax: 'cont-2.jpg'
+		parallax: 'cont-1.png'
 	},
 	Annual_Reports: {
 		title: 'Annual Reports',
@@ -13,7 +37,7 @@
 	},
 	Advisory_Committee: {
 		title: 'Advisory Committee',
-		desc: "Our Advisory Committee is made up of a transdisciplinary team of health professionals, industry leaders, researchers and entrepreneurs—all passionate about translating groundbreaking research into best practices",
+		desc: "",
 		btn: 'Read More',
 		parallax: 'cont-3.jpg'
 	},
@@ -25,20 +49,20 @@
 	},
 	about: {
 		title: 'About Us',
-		desc: "The Envolve Center for Health Behavior Change is a unique academic-industry collaboration between the Brown aThe Center is a Community-Industry-Academic Healthcare Partnership that advances life-centric health solutions to improve lives so that communities can thrive.",
+		desc: "",
 		btn: 'Read More',
 		parallax: 'cont-2.jpg'
 	},
 	events: {
 		title: 'Events',
-		desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-		btn: 'Upcoming Events',
+		desc: "",
+		btn: 'Read more',
 		parallax: 'cont-1.png'
 	},
 	blog: {
 		title: 'Blog',
-		desc: "Interested in reading about our latest news and updates? Upcoming events? You came to the right place. This is our blog and news section, where you can catch up on the latest Envolve Center activities, news, and insights from our team members.",
-		btn: 'Upcoming Events',
+		desc: "",
+		btn: 'Read more',
 		parallax: 'cont-1.png'
 	}
 },
@@ -69,6 +93,12 @@ __pages: [{
                 name: 'blog',
                 href: 'blog.html'
              },{
+                name: 'callForProrosals',
+                href: 'callForProrosals.html'
+             },{
+                name: 'contact',
+                href: 'contact.html'
+             },{
                 name: 'events',
                 href: 'events.html'
              },{
@@ -86,4 +116,25 @@ __pages: [{
              },{
                 name: 'Meet-The-Team',
                 href: 'Meet-The-Team.html'
+             },{
+                name: 'member-engagement-2',
+                href: 'member-engagement-2.html'
+             },{
+                name: 'member-engagement',
+                href: 'member-engagement.html'
+             },{
+                name: 'mission-vision',
+                href: 'mission-vision.html'
+             },{
+                name: 'partners',
+                href: 'partners.html'
+             },{
+                name: 'partnership',
+                href: 'partnership.html'
+             },{
+                name: 'research-individual',
+                href: 'research-individual.html'
+             },{
+                name: 'research',
+                href: 'research.html'
              }]

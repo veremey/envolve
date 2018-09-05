@@ -39,6 +39,15 @@
 			min-height: 100%
 	&__content
 		background-color: #fff
+		&_share
+			display: flex
+			align-items: center
+			.title__e
+				color: #565e68
+				text-transform: uppercase
+				margin: 0 30px 0 0
+				+ar
+				font-weight: normal
 	&__header
 		position: relative
 		padding: 20px 40px 26px
@@ -46,8 +55,11 @@
 	&__info
 		display: inline-block
 		vertical-align: top
-		margin-right: 36px
+		margin-right: 32px
 		margin-bottom: 10px
+		&:nth-child(3n)
+			max-width: 366px
+			margin-right: 10px
 	&__share
 		position: absolute
 		top: 20px
@@ -113,14 +125,14 @@
 			margin-left: 15px
 			margin-right: 0
 
-
 	.title__m
 		color: #000
 	.title__p
 		color: $purpur
 	.desc__m
 		color: #000
-		line-height: 1
+		margin-top: -5px
+		margin-bottom: 5px
 	.btn
 		margin-top: 50px
 		width: 150px
@@ -137,6 +149,10 @@
 		&__text
 			padding-left: 0
 			padding-right: 0
+		&__header
+			padding-bottom: 20px
+		&__text
+			padding-top: 40px
 		&__img
 			margin-bottom: 20px
 		.title__m
