@@ -2,28 +2,7 @@
 <html class="no-js" lang="en">
 
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Envolve center</title>
-		<meta content="" name="description">
-		<meta content="" name="keywords">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<meta content="telephone=no" name="format-detection">
-		
-		<meta name="HandheldFriendly" content="true">
-		
-		<link href="static/css/separate-css/var.css" rel="stylesheet">
-		<link href="static/css/separate-css/aos.css" rel="stylesheet">
-		<link href="static/css/separate-css/slick.css" rel="stylesheet">
-		<link href="static/css/main.css" rel="stylesheet" type="text/css">
-		
-		
-		<link rel="icon" type="image/png" href="favicon.png">
-		<script>
-			(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
-		</script>
-		
+		{{> head/head head.defaults}}
 	</head>
 
 	<body class="page">
@@ -31,63 +10,52 @@
 		<div class="page__wrapper">
 
 			<!-- contentscreen -->
-			
-			<div id="startscreen" class="section contentscreen js-parent"  data-aos="fade-down"  data-aos-duration="0"  data-aos-offset="20" data-aos-delay="0" >
-			
-				<div  class="parallax" >
-					<div class="parallax_fix"  style='background-image: url(static/img/content/cont-1.png);'></div>
-				</div>
-			
-				<div class="layout layout__wide">
-					<div class="startscreen__wrap">
-						<div class="header" >
-							<a href="/" class="header__logo"  tabindex="0">
-								<img src="static/img/general/logo.png" alt="Envolve center For Health Behavior Change" class="header__logo_img">
-							</a>
-						
-							<a class="header__skip" href="startscreen__content"  tabindex="0">skip header content</a>
-						
-							<button class="burger" aria-label="open or hide menu"  tabindex="0"><i></i></button>
-						
-							<div class="header__wrap" >
-						
-								<nav class="nav" role="navigation" data-aos="flip-up" data-aos-offset="20"  data-aos-duration="800" data-aos-delay="500">
-						
-									<ul class="menu ">
-										<li class="menu__item"  data-aos="flip-up"  data-aos-offset="20"   data-aos-duration="1500" data-aos-delay="600"><a href="/" class="menu__link">About</a></li>
-										<li class="menu__item"  data-aos="flip-up"  data-aos-offset="20"   data-aos-duration="1500" data-aos-delay="700"><a href="/" class="menu__link">Research</a></li>
-										<li class="menu__item"  data-aos="flip-up"  data-aos-offset="20"   data-aos-duration="1500" data-aos-delay="800"><a href="/" class="menu__link">Partners</a></li>
-										<li class="menu__item"  data-aos="flip-up"  data-aos-offset="20"   data-aos-duration="1500" data-aos-delay="900"><a href="/" class="menu__link">Blog & News</a></li>
-										<li class="menu__item" data-aos="flip-up"  data-aos-offset="20"   data-aos-duration="1500" data-aos-delay="1000"><a href="/" class="menu__link">Contact</a></li>
-										<li class="menu__item menu__item_search" data-aos="flip-up"  data-aos-offset="20"   data-aos-duration="1500" data-aos-delay="1100"><a href="/" class="menu__link">
-											<img src="static/img/general/icon-lupa.png" alt="search icon" class="icon-search">
-										</a></li>
-									</ul>
-								</nav>
-						
-								<form method="post" action="/" class="search" role="search">
-									<input class="search__input" type="text" name="seach" id="search " placeholder="Search" aria-label="search">
-								</form>
-						
-							</div>
-						</div>			<div id="startscreen__content" class="startscreen__content" >
-							<div class="startscreen__text">
-								<h1 class="title__t" role="heading" aria-level="1">Blog</h1>
-								
-							</div>
-							<button class="btn btn-purpur"  tabindex="0">Read more</button>
-						</div>
-					</div>
+			{{> contentscreen/contentscreen contentscreen/blog}}
+
+			<div class="section js-parent mod_s mod-pb-30" >
+				<div class="layout layout__wide  mod-mt30">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__list">
+							<a href="#" class="breadcrumbs__link">BLOG  </a>
+						</li>
+						<li class="breadcrumbs__list">
+							<a href="" class="breadcrumbs__link">Research Unravels How Unmet Basic Needs Influence Health  </a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="section js-parent mod_s" >
-				<div class="layout layout__wide  mod-mt30">
-					<h2 class="title__o text-purpur title-serif" tabindex="0" role="heading" aria-level="2">News, Publications & Blogs</h2>
 
-					<div class="column-text mod-mb-60">
-						<p class="desc__m">Interested in reading about our latest news and updates? Upcoming events? You came to the right place. </p>
-						<p class="desc__m">This is our blog and news section, where you can catch up on the latest Envolve Center activities, news, and insights from our team members. </p>
+			<div class="section js-parent mod_s mod-pt0" >
+				<div class="layout layout__wide ">
+					<time class="title__p mod-big" datetime="2018-04-23">April 23, 2018</time>
+					<h2 class="title__o text-purpur title-serif" tabindex="0" role="heading" aria-level="2">Research Unravels How Unmet Basic Needs Influence Health</h2>
+
+					<div class="section__pic mod-mb-20">
+						<img src="static/img/content/blog-pic.jpg" alt="blog picture" class="section__img">
 					</div>
+					<div class="post mod-mb-40">
+						<p class="desc__d"><b>St. Louis, MO (April 23, 2018)</b> – Not everyone benefits equally from the type of evidence-based behavioral health interventions being developed by public health experts today. For people who struggle to meet basic needs such as food, housing, or transportation, healthy behaviors, and consequently, good health outcomes, are harder to achieve.</p>
+						<p class="desc__d">That’s why researchers at the Envolve Center for Health Behavior ChangeTM are working with Centene health plans to determine the role of unmet life needs on health behaviors among low income populations. Preliminary results from an initial survey of 100 Medicaid members in Louisiana with type 2 diabetes provided convincing evidence that additional supports may be needed.</p>
+						<p class="desc__d">Health plan members reported more stress, worse sleep, and difficulty with certain cognitive functioning skills, which were positively associated with unmet basic needs. Asked about specific concerns likely to arise during the next month, members responded as follows:</p>
+						<div class="section__pic mod-mb-20">
+							<img src="static/img/content/blog-pic.jpg" alt="blog picture" class="section__img">
+						</div>
+						<p class="desc__d">“It’s no surprise you would have a much harder time showing up to appointments, getting screenings, adhering to medications, being active, and eating nutritious foods,” said Dr. Amy McQueen, associate professor of Medicine at Washington University in St. Louis, during an Envolve Center presentation to Centene employees. In the diabetic population, she noted, these obstacles translate into worse blood-sugar levels, more complications, and more acute emergency care instead of preventive screenings.</p>
+						<p class="desc__d">Half of those surveyed reported having three or more unmet basic needs. Having more unmet needs was associated with more perceived stress, diabetes distress, activity limitations, and hospitalizations. It was also associated with worse attention, cognitive functioning, mental health, sleep, diabetes self-care activities and self-reported health. Of particular concern is that 65 percent said they had fair or poor health, which has been associated with increased morbidity and mortality</p>
+						<p class="desc__d">In exploring the idea of additional support, the research team asked members if they would be interested in receiving help from a “navigator,” or non-healthcare professional. Fifty-nine percent expressed interest in assistance with health needs and 49 percent with basic needs. As might be expected, the more unmet needs, the greater the interest in a navigator.  </p>
+						<p class="desc__d">Perhaps most exciting, according to McQueen, was the ability to demonstrate the different associations between unmet basic needs and the team’s conceptual model. While most other studies focus on just one basic need, this one looked at a variety, along with other factors like stress, sleep and executive functioning. “That we have so many great associations reflected, even with the small sample, provides a great contribution…and good estimates as to what we can expect in a larger study,” said McQueen. </p>
+						<p class="desc__d">The basic needs survey also demonstrated the value of the Envolve Center partnership, proving that those in academia could successfully work with a managed care organization to enroll members and conduct a research study. The rich data collected lays the groundwork for future investigation with additional health plans across more health conditions.
+						</p>
+					</div>
+
+					<div class="event__content event__content_share " style="display: flex; align-items: center;">
+						<h3 class="title__e" role="heading" aria-level="3">SHARE THIS POST: </h3>
+						<div class="share">
+							<img src="static/img/content/share.jpg" alt="share picture" class="share__img" tabindex="0">
+						</div>
+					</div>
+
+
 
 					<div class="wrap wrap-36">
 
@@ -289,80 +257,13 @@
 			</div>
 
 			<!-- research area -->
-			
-			<div class="section  section-purpur section-area" >
-				<div class="layout layout__wide">
-					<h2 class="title__o " role="heading" aria-level="2">Research Focus Areas</h2>
-					<p class="desc__r">The Envolve Center engages in research across five focus areas to influence positive health outcomes and decrease healthcare costs. Find out more about our studies, initiatives, and researchers here.</p>
-					<button class="btn btn-white mod-mt30"  tabindex="0">LEARN MORE</button>
-				</div>
-			</div>
-			<footer class="footer">
-				<div class="parallax">
-					<div class="parallax_fix"  style='background-image: url(static/img/general/footer.png);'></div>
-				</div>
-				<div class="layout layout__wide">
-					<div class="footer__top">
-						<div class="subscription">
-							<h3 class="title__i"  role="heading", aria-level="6">Newsletter sign up</h3>
-							<h2 class="title__o"  role="heading", aria-level="2">Stay Updated</h2>
-							<form method="post" action="/" method="post" class="subscription__form"  >
-								<div class="subscription__field">
-									<input class="subscription__input" type="email" name="subscriptionMail" id="subscriptionMail" placeholder="Email Address" role="subscribe"  tabindex="0">
-									<button class="btn btn-white"  tabindex="0">sing up</button>
-								</div>
-							</form>
-						</div>
-					</div>
-			
-					<div class="footer__bottom" >
-						<div class="footer__col footer__col_first">
-							<a href="./" class="footer__logo" tabindex="0">
-								<img src="static/img/general/logo.png" alt="Envolve center For Health Behavior Change">
-							</a>
-							<div class="copy">&copy; 2018 CENTENE CORPORATION</div>
-							<div class="footer__col_content">
-								<a href="#" class="footer__link"  tabindex="0">Terms & Conditions</a>
-								<a href="#" class="footer__link"  tabindex="0">Privacy Policy</a>
-								<a href="#" class="footer__link"  tabindex="0">Site Map</a>
-							</div>
-						</div>
-						<div class="footer__col" >
-							<h2 class="footer__title"  role="heading", aria-level="2" >About Us</h2>
-							<a href="#" class="footer__link"  tabindex="0">History</a>
-							<a href="#" class="footer__link"  tabindex="0">Vision</a>
-							<a href="#" class="footer__link"  tabindex="0">Faculty</a>
-							<a href="#" class="footer__link"  tabindex="0">Partners</a>
-						</div>
-						<div class="footer__col" >
-							<h2 class="footer__title" role="heading", aria-level="2" >Our Research</h2>
-							<a href="#" class="footer__link"  tabindex="0">Lifestyle Innovations</a>
-							<a href="#" class="footer__link"  tabindex="0">Behavioral Economics</a>
-							<a href="#" class="footer__link"  tabindex="0">Analytics Insights</a>
-							<a href="#" class="footer__link"  tabindex="0">Health Communications</a>
-							<a href="#" class="footer__link"  tabindex="0">TBD</a>
-						</div>
-						<div class="footer__col" >
-							<h2 class="footer__title" role="heading", aria-level="2" >Learn More</h2>
-							<a href="#" class="footer__link" tabindex="0">News</a>
-							<a href="#" class="footer__link" tabindex="0">Blog</a>
-							<a href="#" class="footer__link" tabindex="0">Events</a>
-							<a href="#" class="footer__link" tabindex="0">Publications</a>
-						</div>
-						<div class="footer__col" >
-							<h2 class="footer__title" role="heading", aria-level="2" >Connect With Us</h2>
-							<a href="#" class="footer__link"  tabindex="0">Contact Us</a>
-							<a href="#" class="footer__link"  tabindex="0">Call For Proposals</a>
-							<a href="#" class="footer__link"  tabindex="0">Facebook</a>
-							<a href="#" class="footer__link"  tabindex="0">Twitter</a>
-							<a href="#" class="footer__link"  tabindex="0">Youtube</a>
-						</div>
-					</div>
-				</div>
-			</footer>		</div>
+			{{> research-area/research-area}}
+
+			{{> footer/footer}}
+		</div>
 
 
-		<script src="static/js/main.js"></script>
+		<script src="static/js/main%=hash=%%=min=%.js"></script>
 
 		<script src="static/js/separate-js/detect-zoom.min.js"></script>
 		<script src="static/js/separate-js/TweenMax.min.js"></script>

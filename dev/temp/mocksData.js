@@ -93,6 +93,9 @@ __pages: [{
                 name: 'blog',
                 href: 'blog.html'
              },{
+                name: 'blogSingle',
+                href: 'blogSingle.html'
+             },{
                 name: 'callForProrosals',
                 href: 'callForProrosals.html'
              },{
