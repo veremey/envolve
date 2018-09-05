@@ -6,6 +6,19 @@ $(document).ready(function () {
 	    document.querySelector('html').classList.add('webkit-line-clamp');
 	}
 
+
+	$('.contact__input, .contact__textarea').change(function () {
+		var $this = $(this);
+
+		if( $this.val().length > 0 ) {
+			$this.addClass('has-content');
+		} else {
+			$this.removeClass('has-content');
+		}
+	});
+
+
+
 	var zoom = detectZoom.zoom();
 	if(zoom > 1.5) {
 		$('.section__s').css({
@@ -85,21 +98,6 @@ $(document).ready(function () {
 		$('.search__input').val('');
 	});
 
-	// slick arrow focus function
-
-	// $('body').keyup(function(e) {
-	//    var code = e.keyCode || e.which;
-	//    if (code == '9') {
-	//     if($('.slick-arrow').is(':focus')){
-	//     	var $this = $(':focus');
-	//     	// console.log($this.attr('class'));
-	//     	$this.attr('aria-live', 'assertive');
-	//     	$this.attr('tabindex', '-1');
-	//     }
-	//    }
-	// });
-
-
 
 	$(document).on('click touchstart ', function(e) {
 		var $target = $('.search__input');
@@ -117,6 +115,32 @@ $(document).ready(function () {
 		}
 
 	});
+
+
+	// slick arrow focus function
+
+	// $('body').keyup(function(e) {
+	// 	var code = e.keyCode || e.which;
+	// 	if (code == '9') {
+	// 		if($('.slick-arrow').is(':focus')){
+	// 			var $this = $(':focus');
+
+	// 			$this.attr('aria-live', 'assertive');
+	// 			$this.attr('tabindex', '-1');
+	// 		}
+	// 	}
+	// });
+
+	// $('.slick-arrow:focus').on('keyup' ,function (e) {
+	// 	var code = e.keyCode || e.which;
+
+	// 	if (code == '32' || '13') {
+	// 		console.log('11111111111111111111');
+	// 		// $(this).parents('.js-parent').find('.slick-active').addClass('11111111111111111111111').focus();
+	// 	}
+	// });
+
+
 
 
 

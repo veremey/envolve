@@ -117,6 +117,32 @@ $(document).ready(function () {
 	});
 
 
+	// slick arrow focus function
+
+	// $('body').keyup(function(e) {
+	// 	var code = e.keyCode || e.which;
+	// 	if (code == '9') {
+	// 		if($('.slick-arrow').is(':focus')){
+	// 			var $this = $(':focus');
+
+	// 			$this.attr('aria-live', 'assertive');
+	// 			$this.attr('tabindex', '-1');
+	// 		}
+	// 	}
+	// });
+
+	// $('.slick-arrow:focus').on('keyup' ,function (e) {
+	// 	var code = e.keyCode || e.which;
+
+	// 	if (code == '32' || '13') {
+	// 		console.log('11111111111111111111');
+	// 		// $(this).parents('.js-parent').find('.slick-active').addClass('11111111111111111111111').focus();
+	// 	}
+	// });
+
+
+
+
 
 
 	AOS.init({

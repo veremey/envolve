@@ -25,6 +25,13 @@
 		display: block
 		width: 100%
 		margin: 0
+.third-items
+	display: flex
+	justify-content: space-between
+	.news
+		display: inline-block
+		width: 31.4444%
+
 
 .news
 	display: inline-block
@@ -53,6 +60,13 @@
 		min-height: 100%
 	&__top
 		margin-bottom: 10px
+	&__header
+		position: relative
+		.news__arrow
+			top: 50%
+			right: 0
+			+try(-50%)
+
 	&__content
 		position: relative
 		padding: 30px 35px
@@ -85,6 +99,75 @@
 			.desc__d
 				color: var(--color)
 				opacity: .6
+	&__row
+		border-top: 1px solid #EDEDED
+		padding: 15px 0
+		&_flex
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-bottom: 10px
+			&:hover
+				opacity: .8
+		&_content
+			position: relative
+			font-size: 12px
+			line-height: 2
+			color: #565E68
+			+ar
+			&:after
+				content: '>'
+				position: absolute
+				bottom: 4px
+				right: -16px
+				color: $purpur
+				line-height: 1
+				font-size: 16px
+			b
+				+ab
+		&_icon
+			border: 1px solid #EDEDED
+			border-radius: 4px
+			padding: 4px 6px
+			width: 40px
+			height: 40px
+		&_btn
+			display: block
+			width: 100%
+			padding: 6px 10px 5px
+			border-radius: 30px
+			background-color: #71C29F
+			color: #fff
+			font-size: 14px
+			+ab
+			+tr(.4s)
+			&:hover
+				opacity: .8
+			&.mod-progress
+				background-color: #E3AB4C
+	&__hesh
+		display: inline-block
+		vertical-align: top
+		margin-right: 16px
+		margin-bottom: 16px
+		white-space: nowrap
+		&:hover
+			span
+				color: $purpur
+		&_icon
+			display: inline-block!important
+			vertical-align: top
+			width: 18px
+			height: 15px
+			margin-right: 6px
+		span
+			font-size: 14px
+			color: #565E68
+			font-style: italic
+			+ar
+			+tr(.4s)
+	&-border
+		border-top: 2px solid $purpur
 	.desc__limit
 		position: relative
 		display: block
@@ -101,6 +184,8 @@
 		+tr(.4s)
 	.title__k
 		color: var(--color)
+	.tag
+		margin-bottom: 10px
 
 
 .wrap

@@ -31,9 +31,12 @@ button
 	border: none
 	cursor: pointer
 	background-color: $n
+	color: inherit
 	&:focus
-		// border-bottom: 3px ridge red
 		box-shadow: 0 0 4px 2px $purpur
+
+.is-focused:focus
+	box-shadow: 0 0 4px 2px $purpur
 
 
 h1, h2, h3, h4, h5, h6
@@ -343,6 +346,12 @@ p
 		margin-bottom: 2.66em
 		text-transform: uppercase
 		+ab
+	&__rm
+		font-size: 18px
+		color: #565E68
+		line-height: 1.8
+		margin-bottom: 1em
+		+ab
 	&__e
 		font-size: 16px
 		color: #59616B
@@ -609,6 +618,71 @@ p
 	.desc__d
 		font-size: 13px
 
+.map
+	width: 100%
+	&__img
+		display: inline-block
+		vertical-align: top
+		max-width: 100%
+
+.contact
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__fieldset
+		display: inline-block
+		vertical-align: top
+		position: relative
+		width: 49%
+		margin-bottom: 40px
+		padding: 0
+		background-color: #fff
+		border: none
+		+r(768)
+			width: 100%
+			margin-bottom: 20px
+		&_text
+			width: 100%
+	&__input
+		display: block
+		width: 100%
+		height: 60px
+		padding: 21px 20px 19px
+		background-color: #F7F6F6
+		border: none
+		&.has-content,
+		&:focus
+			& + .contact__label
+				top: 7px
+				left: 20px
+				font-size: 10px
+	&__label
+		position: absolute
+		top: 24px
+		left: 30px
+		text-transform: uppercase
+		font-size: 12px
+		letter-spacing: 0.01em
+		color: #4F565B
+		+ar
+		+tr(.4s)
+	&__textarea
+		display: block
+		width: 100%
+		height: 120px
+		padding: 21px 20px 19px
+		background-color: #F7F6F6
+		border: none
+		resize: none
+		&.has-content,
+		&:focus
+			& + .contact__label
+				top: 7px
+				left: 20px
+				font-size: 10px
+	.btn
+		width: 200px
+		padding: 16px 24px 14px
 
 .tag
 	display: inline-block
@@ -699,7 +773,11 @@ p
 
 .mod-pt0
 	padding-top: 0px!important
+.mod-pb0
+	padding-bottom: 0px!important
 
+.mod-mt0
+	margin-top: 0px!important
 .mod-mt30
 	margin-top: 30px
 .mod-mt40

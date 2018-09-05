@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+
+	<body class="page">
+
+		<div class="page__wrapper">
+
+			<!-- contentscreen -->
+			<div id="startscreen" class="section contentscreen js-parent"  data-aos="fade-down"  data-aos-duration="0"  data-aos-offset="20" data-aos-delay="0" >
+
+				<div  class="parallax" >
+					<div class="parallax_fix"  style='background-image: url(static/img/content/cont-1.png);'></div>
+				</div>
+
+				<div class="layout layout__wide">
+					<div class="startscreen__wrap">
+						{{> header/header}}
+						<div id="startscreen__content" class="startscreen__content"  >
+							<div class="startscreen__text">
+								<h1 class="title__t" role="heading" aria-level="1">Contact</h1>
+							</div>
+							<button class="btn btn-purpur"  tabindex="0">Read More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section " >
+				<div class="layout layout__wide  mod-mt60  mod-mb-40 ">
+
+					<div class="wrap-justify">
+						<div class="col-48">
+							<div class="partners__content mod-mb-80">
+								<h2 class="title__o text-purpur title-serif" role="heading" aria-level="2">Contact</h2>
+								<div class="partners__text">
+									<p class="desc__m">The Envolve Center for Health Behavior Change includes a national network of academic and industry researchers and professionals. Our primary location is housed in St. Louis, Missouri, in Hillman Hall on the campus of Washington University in St. Louis.</p>
+									<p class="desc__m"><a href="#" class="text-purpur"><b>Click here</b></a> for a campus map, parking information, and directions. Please note major construction is taking place near Hillman Hall and may limit parking availability. Please contact us for assistance if needed.</p>
+									<p class="desc__m">To contact a specific faculty, staff, or professional member, please visit our About the Team page to locate his/her email or search the WUSTL directory. You may also submit inquiries or requests to Adam Pearson at <a href="mailto:apearson@wustl.edu" class="text-purpur"><b>apearson@wustl.edu</b></a>. </p>
+									<p class="desc__m">Feel free to leave us a specific question or idea. You can reach out by filling out the form below:.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-48">
+
+							<div class="partners__content mod-mb-80">
+								<h2 class="title__o text-purpur title-serif" role="heading" aria-level="2">Mailing Address</h2>
+								<div class="partners__text">
+									<h3 class="title__rm " role="heading" aria-level="3">Envolve Center for Health Behavior Change</h3>
+
+									<div class="wrap-flex">
+										<div class="col-48">
+											<p class="desc__r">Campus Box 1196 <br> One Brookings Drive <br> St. Louis, MO 63130 </p>
+										</div>
+										<div class="col-48"><p class="desc__r">Phone: <a href="tel:314935319">(314) 935-3191</a></p></div>
+									</div>
+
+									<div id="map" class="map">
+										<img src="static/img/content/map.jpg" alt="map picture" class="map__img">
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section " >
+				<div class="layout layout__wide ">
+					<form action="/" method="post" autocomplete="on" class="contact mod-mb-80">
+						<fieldset class="contact__fieldset">
+							<input  class="contact__input" type="text" id="name" >
+							<label class="contact__label" for="name">Name</label>
+						</fieldset>
+						<fieldset class="contact__fieldset">
+							<input  class="contact__input" type="text" id="company" >
+							<label class="contact__label" for="company">Company</label>
+						</fieldset>
+						<fieldset class="contact__fieldset">
+							<input  class="contact__input" type="email" id="email" >
+							<label class="contact__label" for="email">Email</label>
+						</fieldset>
+						<fieldset class="contact__fieldset">
+							<input  class="contact__input" type="number" id="tel" >
+							<label class="contact__label" for="tel">Phone</label>
+						</fieldset>
+						<fieldset class="contact__fieldset contact__fieldset_text">
+							<textarea class="contact__textarea" name="message" id="message" cols="" rows=""></textarea>
+							<label  class="contact__label" for="message">ENTER YOUR MESSAGE</label>
+						</fieldset>
+						<button class="btn btn-purpur">Send message</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- research area -->
+			{{> research-area/research-area}}
+
+			{{> footer/footer}}
+		</div>
+
+
+		<script src="static/js/main%=hash=%%=min=%.js"></script>
+
+		<script src="static/js/separate-js/detect-zoom.min.js"></script>
+		<script src="static/js/separate-js/TweenMax.min.js"></script>
+		<script src="static/js/separate-js/ScrollMagic.js"></script>
+		<script src="static/js/separate-js/animation.gsap.js"></script>
+
+		<script src="static/js/separate-js/global.js"></script>
+		<script src="static/js/separate-js/common.js"></script>
+
+	</body>
+
+</html>

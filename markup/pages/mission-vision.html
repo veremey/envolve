@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+
+	<body class="page">
+
+		<div class="page__wrapper">
+
+			<!-- contentscreen -->
+			<div id="startscreen" class="section contentscreen js-parent"  data-aos="fade-down"  data-aos-duration="0"  data-aos-offset="20" data-aos-delay="0" >
+
+				<div  class="parallax" >
+					<div class="parallax_fix"  style='background-image: url(static/img/content/cont-1.png);'></div>
+				</div>
+
+				<div class="layout layout__wide">
+					<div class="startscreen__wrap">
+						{{> header/header}}
+						<div id="startscreen__content" class="startscreen__flex"  >
+							<div  class="startscreen__content"  >
+								<div class="startscreen__text">
+									<h1 class="title__t" role="heading" aria-level="1">Mission and Vision</h1>
+								</div>
+								<button class="btn btn-purpur"  tabindex="0">Read More</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="section  mod_s" >
+				<div class="layout layout__wide ">
+
+					<div class="container" id="container">
+						<main class="main mainsingle">
+							<div class="section  mod-mb-60" >
+								<div class="section mod-mb-40">
+									<h2 class="title__o text-purpur"  role="heading" aria-level="2">Mission</h2>
+									<p class="desc__r"><em>The Center is a Community-Industry-Academic Healthcare Partnership that advances people centered health solutions to improve lives so that communities can thrive.</em></p>
+								</div>
+							</div>
+
+							<div class="section mod-mb-60" >
+								<h2 class="title__o text-purpur"  role="heading" aria-level="2">Vision</h2>
+								<p class="desc__r"><em>By design, the Center is distinctive in structure and propelled by a lifecycle that is an informed collaboration. Our researchers are experts and our work is in real world settings with a focus on issues that allow individuals to lead healthy, productive lives. We accelerate solutions by collapsing the supply chain, giving us intentional work with intentional results.</em></p>
+							</div>
+
+						</main>
+						<aside class="aside asidesingle">
+							{{> asidesingle/asidesingle}}
+						</aside>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- research area -->
+			{{> research-area/research-area}}
+
+			{{> footer/footer}}
+		</div>
+
+
+		<script src="static/js/main%=hash=%%=min=%.js"></script>
+
+		<script src="static/js/separate-js/detect-zoom.min.js"></script>
+		<script src="static/js/separate-js/TweenMax.min.js"></script>
+		<script src="static/js/separate-js/ScrollMagic.js"></script>
+		<script src="static/js/separate-js/animation.gsap.js"></script>
+
+		<script src="static/js/separate-js/global.js"></script>
+		<script src="static/js/separate-js/common.js"></script>
+
+	</body>
+
+</html>

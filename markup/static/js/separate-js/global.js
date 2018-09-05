@@ -91,10 +91,16 @@ function GlobalClass() {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			infinite: false,
+			focusOnSelect: true,
 			prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
 			nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
 		});
 		});
+
+		slider.on('afterChange', function (slick, currentSlide) {
+				$('.slick-slide').removeClass('is-focused');
+				$(this).find('.slick-active').addClass('is-focused').focus();
+			});
 	}
 
 	/*- dots slider  -*/
@@ -108,6 +114,7 @@ function GlobalClass() {
 			slidesToScroll: 1,
 			initialSlide: $initialSlide,
 			infinite: false,
+			focusOnSelect: true,
 			prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
 			nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
 			dots: true,
@@ -123,8 +130,13 @@ function GlobalClass() {
 					}
 				}
 				]
+			});
 		});
-		});
+
+		slider.on('afterChange', function (slick, currentSlide) {
+				$('.slick-slide').removeClass('is-focused');
+				$(this).find('.slick-active').addClass('is-focused').focus();
+			});
 	}
 
 	/*- simple slider  -*/
@@ -141,12 +153,18 @@ function GlobalClass() {
 				initialSlide: $initialSlide,
 				adaptiveHeight: true,
 				infinite: false,
+				focusOnSelect: true,
 				prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
 				nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
 
 				});
 			});
 		}
+
+		slider.on('afterChange', function (slick, currentSlide) {
+				$('.slick-slide').removeClass('is-focused');
+				$(this).find('.slick-active').addClass('is-focused').focus();
+			});
 	}
 
 	/*- designSlider slider  -*/
@@ -165,12 +183,19 @@ function GlobalClass() {
 				centerMode: true,
 				variableWidth: true,
 				infinite: false,
+				focusOnSelect: true,
 				prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
 				nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
 
 				});
 			});
 		}
+
+		slider.on('afterChange', function (slick, currentSlide) {
+				$('.slick-slide').removeClass('is-focused');
+				$(this).find('.slick-active').addClass('is-focused').focus();
+			});
+
 	}
 
 	/*- designerSlider slider  -*/
@@ -189,12 +214,18 @@ function GlobalClass() {
 				centerMode: false,
 				variableWidth: true,
 				infinite: false,
+				focusOnSelect: true,
 				prevArrow: $(this).parents('.js-parent').find('.section__nav_prev'),
 				nextArrow: $(this).parents('.js-parent').find('.section__nav_next'),
 
 				});
 			});
 		}
+		slider.on('afterChange', function (slick, currentSlide) {
+				$('.slick-slide').removeClass('is-focused');
+				$(this).find('.slick-active').addClass('is-focused').focus();
+			});
+
 	}
 
 	/*- four slider  -*/
@@ -205,6 +236,7 @@ function GlobalClass() {
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			infinite: false,
+			focusOnSelect: true,
 			prevArrow: slider.parents('.section').find('.section__nav_prev'),
 			nextArrow: slider.parents('.section').find('.section__nav_next'),
 			responsive: [
@@ -223,6 +255,12 @@ function GlobalClass() {
 			]
 
 		});
+
+		slider.on('afterChange', function (slick, currentSlide) {
+				$('.slick-slide').removeClass('is-focused');
+				$(this).find('.slick-active').addClass('is-focused').focus();
+			});
+
 	}
 
 	/*- three slider  -*/
@@ -235,6 +273,7 @@ function GlobalClass() {
 				slidesToShow: 3,
 				slidesToScroll: 1,
 				infinite: false,
+				focusOnSelect: true,
 				prevArrow: slider.parents('.js-parent').find('.section__nav_prev'),
 				nextArrow: slider.parents('.js-parent').find('.section__nav_next'),
 				responsive: [
@@ -253,6 +292,12 @@ function GlobalClass() {
 				]
 			});
 		}
+
+		slider.on('afterChange', function (slick, currentSlide) {
+				$('.slick-slide').removeClass('is-focused');
+				$(this).find('.slick-active').addClass('is-focused').focus();
+			});
+
 	}
 
 	/*- arrow slider  -*/
@@ -264,9 +309,16 @@ function GlobalClass() {
 			slidesToScroll: 1,
 			arrows: true,
 			infinite: false,
+			focusOnSelect: true,
 			prevArrow: slider.parents('.section').find('.section__nav_prev'),
 			nextArrow: slider.parents('.section').find('.section__nav_next'),
 		});
+
+		slider.on('afterChange', function (slick, currentSlide) {
+				$('.slick-slide').removeClass('is-focused');
+				$(this).find('.slick-active').addClass('is-focused').focus();
+			});
+
 	}
 
 	/*- slider sinc  -*/
@@ -292,11 +344,17 @@ function GlobalClass() {
 			infinite: false,
 			adaptiveHeight: true,
 			dots: true,
+			focusOnSelect: true,
 			customPaging: function(slider, i) {
 			return '<button class="tab">' + $(slider.$slides[i]).find('.slide-year').text() + '</button>';
 			},
 			asNavFor: opt.sliderTop
 		});
+
+		slider.on('afterChange', function (slick, currentSlide) {
+				$('.slick-slide').removeClass('is-focused');
+				$(this).find('.slick-active').addClass('is-focused').focus();
+			});
 	}
 
 	/*- height = width -*/

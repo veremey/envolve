@@ -82,6 +82,10 @@
     height: 100%;
     min-height: 1px;
 }
+.slick-slide:focus {
+    box-shadow: 0 0 4px 2px #AC218E;
+}
+
 [dir='rtl'] .slick-slide
 {
     float: right;
@@ -116,4 +120,8 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slick-active:focus {
+    box-shadow: 0 0 4px 2px #AC218E;
 }
