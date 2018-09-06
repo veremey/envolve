@@ -972,6 +972,13 @@ p {
   width: calc(100% - 400px);
 }
 
+@media only screen and (max-width: 1020px) {
+  .mainmedium {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 .mainhalf .section {
   width: 76%;
 }
@@ -1130,6 +1137,7 @@ p {
 }
 
 .title__p.mod-big {
+  display: block;
   font-size: 14px;
   letter-spacing: .1em;
   margin-bottom: 1.4em;
@@ -1511,6 +1519,25 @@ p {
   font-family: 'adelle_sans_regular', Arial, sans-serif;
 }
 
+.person .title__p {
+  color: #737477;
+  text-transform: none;
+}
+
+.person .title__m {
+  color: #000;
+  font-family: 'adelle_sans_regular', Arial, sans-serif;
+}
+
+.person .title__c {
+  color: #737477;
+  text-transform: none;
+}
+
+.person .desc__d {
+  font-size: 13px;
+}
+
 .person_horizontal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1565,23 +1592,33 @@ p {
   }
 }
 
-.person .title__p {
-  color: #737477;
-  text-transform: none;
+.person_author {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.person .title__m {
-  color: #000;
-  font-family: 'adelle_sans_regular', Arial, sans-serif;
+.person_author .title__m {
+  font-size: 24px;
+  line-height: 1.1;
+  margin-bottom: .6em;
+  color: #565E68;
+  font-family: 'adelle_sans_bold', Arial, sans-serif;
 }
 
-.person .title__c {
-  color: #737477;
-  text-transform: none;
+.person_author .title__c {
+  text-transform: uppercase;
 }
 
-.person .desc__d {
-  font-size: 13px;
+.person_author .desc__d {
+  font-size: 16px;
+}
+
+.person_author .person__top {
+  border-bottom: none;
+}
+
+.person_author .person__bottom {
+  padding-top: 0;
 }
 
 .map {
@@ -1832,6 +1869,10 @@ p {
   padding-bottom: 30px !important;
 }
 
+.mod-pb-60 {
+  padding-bottom: 60px !important;
+}
+
 .mod-mt0 {
   margin-top: 0px !important;
 }
@@ -1984,7 +2025,7 @@ p {
 
 .aside__list {
   padding: 0;
-  margin: 0;
+  margin: 0 0 40px;
   list-style-type: none;
 }
 
@@ -2037,6 +2078,12 @@ p {
 
 .asidemedium {
   max-width: 300px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .asidemedium {
+    max-width: 100%;
+  }
 }
 
 .aside-content {
@@ -3090,6 +3137,10 @@ p {
   margin-left: 10%;
 }
 
+.startscreen__flex .startscreen__icon_round {
+  border-radius: 100%;
+}
+
 .startscreen-box {
   position: relative;
   z-index: 10;
@@ -3479,6 +3530,10 @@ p {
   .news {
     width: calc(100% - 36px);
   }
+}
+
+.news.col-48 {
+  width: calc(48% - 36px);
 }
 
 .news__pic {

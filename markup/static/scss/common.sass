@@ -275,6 +275,9 @@ p
 
 .mainmedium
 	width: calc(100% - 400px)
+	+r(1020)
+		width: 100%
+		margin-bottom: 30px
 
 .mainhalf
 	.section
@@ -377,6 +380,7 @@ p
 		color: var(--color)
 		+ab
 		&.mod-big
+			display: block
 			font-size: 14px
 			letter-spacing: .1em
 			margin-bottom: 1.4em
@@ -609,6 +613,17 @@ p
 		.desc__d
 			width: 66%
 			+ar
+	.title__p
+		color: #737477
+		text-transform: none
+	.title__m
+		color: #000
+		+ar
+	.title__c
+		color: #737477
+		text-transform: none
+	.desc__d
+		font-size: 13px
 	&_horizontal
 		display: flex
 		flex-direction: row
@@ -637,18 +652,23 @@ p
 				padding: 24px 40px
 				+r(650)
 					padding: 20px
+	&_author
+		box-shadow: none
+		.title__m
+			font-size: 24px
+			line-height: 1.1
+			margin-bottom: .6em
+			color: #565E68
+			+ab
+		.title__c
+			text-transform: uppercase
+		.desc__d
+			font-size: 16px
+		.person__top
+			border-bottom: none
+		.person__bottom
+			padding-top: 0
 
-	.title__p
-		color: #737477
-		text-transform: none
-	.title__m
-		color: #000
-		+ar
-	.title__c
-		color: #737477
-		text-transform: none
-	.desc__d
-		font-size: 13px
 
 .map
 	width: 100%
@@ -814,6 +834,8 @@ p
 	padding-bottom: 0px!important
 .mod-pb-30
 	padding-bottom: 30px!important
+.mod-pb-60
+	padding-bottom: 60px!important
 
 .mod-mt0
 	margin-top: 0px!important

@@ -135,6 +135,15 @@ __pages: [{
                 name: 'partnership',
                 href: 'partnership.html'
              },{
+                name: 'research-individual-behaviors',
+                href: 'research-individual-behaviors.html'
+             },{
+                name: 'research-individual-HO',
+                href: 'research-individual-HO.html'
+             },{
+                name: 'research-individual-HSD',
+                href: 'research-individual-HSD.html'
+             },{
                 name: 'research-individual',
                 href: 'research-individual.html'
              },{
