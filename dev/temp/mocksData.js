@@ -120,14 +120,8 @@ __pages: [{
                 name: 'Meet-The-Team',
                 href: 'Meet-The-Team.html'
              },{
-                name: 'member-engagement-2',
-                href: 'member-engagement-2.html'
-             },{
                 name: 'member-engagement',
                 href: 'member-engagement.html'
-             },{
-                name: 'mission-vision',
-                href: 'mission-vision.html'
              },{
                 name: 'partners',
                 href: 'partners.html'
@@ -141,11 +135,11 @@ __pages: [{
                 name: 'research-individual-HO',
                 href: 'research-individual-HO.html'
              },{
+                name: 'research-individual-HSD-2',
+                href: 'research-individual-HSD-2.html'
+             },{
                 name: 'research-individual-HSD',
                 href: 'research-individual-HSD.html'
-             },{
-                name: 'research-individual',
-                href: 'research-individual.html'
              },{
                 name: 'research',
                 href: 'research.html'

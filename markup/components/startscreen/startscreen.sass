@@ -22,19 +22,35 @@
 	&__flex
 		display: flex
 		justify-content: space-between
-		flex-wrap: wrap
-		.startscreen__content.col-48
-			align-items: center
-			width: 48%
-			+r(1020)
-				width: 100%
-			p
-				width: 60%
+		// flex-wrap: wrap
+		.startscreen__content
+			margin-top: 0
+		// &.no-wrap
+		// 	flex-wrap: nowrap
+		// 	margin-top: 30px
 		.startscreen__icon
-			width: 30%
-			margin-left: 10%
+			width: 104px
+			min-width: 104px
+			height: 104px
+			margin-left: 30px
+			+r(768)
+				width: 74px
+				min-width: 74px
+				height: 74px
+				margin-left: 20px
 			&_round
 				border-radius: 100%
+		.startscreen__content
+			width: calc(100% - 180px)
+			+r(768)
+				width: calc(100% - 100px)
+		&.has-text
+			.has-text
+				align-items: center
+				width: 48%
+				+r(1020)
+					width: 100%
+
 	&-box
 		position: relative
 		z-index: 10
@@ -92,6 +108,8 @@
 	.btn
 		width: 200px
 		padding: 16px 24px 14px
+		+r(500)
+			width: 166px
 
 
 .contentscreen

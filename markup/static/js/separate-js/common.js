@@ -157,17 +157,12 @@ $(document).ready(function () {
 
 /*-   resize doc  -*/
 
-// $(window).on('resize', function () {
+// $(document).on('resize', function () {
 
-// 	Global.simpleSlider({
-// 		slider: '.startscreen-slider',
-// 		sliderItem: '.startscreen-slider__item'
-// 	});
-
-
-// 	Global.dotsSlider({
-// 		slider: '.synk-slider'
-// 	});
+// 		Global.threeSlider({
+// 			slider: '.third-slider',
+// 			sliderItem: '.news'
+// 		});
 
 
 // });

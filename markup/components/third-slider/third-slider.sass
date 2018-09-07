@@ -60,10 +60,15 @@
 		+vcenter
 		min-width: 100%
 		min-height: 100%
+	.tag
+		margin-bottom: 10px
 	&__top
 		margin-bottom: 10px
+		.tag
+			margin-bottom: 0
 	&__header
 		position: relative
+		padding-right: 56px
 		.news__arrow
 			top: 50%
 			right: 0
@@ -114,19 +119,16 @@
 		&_content
 			position: relative
 			font-size: 12px
+			margin-right: 16px
 			line-height: 2
 			color: #565E68
 			+ar
-			&:after
-				content: '>'
-				position: absolute
-				bottom: 4px
-				right: -16px
-				color: $purpur
-				line-height: 1
-				font-size: 16px
 			b
 				+ab
+		&_arr
+			color: $purpur
+			line-height: 1
+			font-size: 16px
 		&_icon
 			border: 1px solid #EDEDED
 			border-radius: 4px
@@ -147,6 +149,10 @@
 				opacity: .8
 			&.mod-progress
 				background-color: #E3AB4C
+		&_arr
+			display: inline-block
+			vertical-align: justify
+			color: $purpur
 	&__hesh
 		display: inline-block
 		vertical-align: top
@@ -186,8 +192,6 @@
 		+tr(.4s)
 	.title__k
 		color: var(--color)
-	.tag
-		margin-bottom: 10px
 
 
 .wrap

@@ -278,7 +278,7 @@ function GlobalClass() {
 				nextArrow: slider.parents('.js-parent').find('.section__nav_next'),
 				responsive: [
 					{
-						breakpoint: 1024,
+						breakpoint: 1080,
 						settings: {
 							slidesToShow: 2
 						}
