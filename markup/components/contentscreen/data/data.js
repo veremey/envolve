@@ -3,66 +3,66 @@ var data = {contentscreen: {
 		title: 'Partnership Program (Research)',
 		desc: '',
 		btn: 'Read More',
-		parallax: 'cont-1.png'
+		parallax: 's06.png'
 	},
 	partners: {
 		title: 'Partners',
 		desc: '',
 		btn: 'Read More',
-		parallax: 'cont-1.png'
+		parallax: 's08.png'
 	},
 	Call_for_Proposals: {
 		title: 'Call for Proposals',
 		desc: '',
 		btn: 'Read More',
-		parallax: 'cont-1.png'
+		parallax: 's07.png'
 	},
 	research: {
 		title: 'Research',
 		desc: '',
 		btn: 'Read More',
-		parallax: 'cont-1.png'
+		parallax: 's06.png'
 	},
 	eventsSingle: {
 		title: 'Events',
 		desc: '',
 		btn: 'Read More',
-		parallax: 'cont-1.png'
+		parallax: 's09.png'
 	},
 	Annual_Reports: {
 		title: 'Annual Reports',
 		desc: '',
 		btn: 'Read More',
-		parallax: 'cont-3.jpg'
+		parallax: 's05.png'
 	},
 	Advisory_Committee: {
 		title: 'Advisory Committee',
 		desc: "",
 		btn: 'Read More',
-		parallax: 'cont-3.jpg'
+		parallax: 's04.png'
 	},
 	meettheteam: {
 		title: 'Meet the Team',
 		desc: "",
 		btn: 'Read More',
-		parallax: 'cont-2.jpg'
+		parallax: 's03.png'
 	},
 	about: {
 		title: 'About Us',
 		desc: "",
 		btn: 'Read More',
-		parallax: 'cont-2.jpg'
+		parallax: 's02.png'
 	},
 	events: {
 		title: 'Events',
 		desc: "",
 		btn: 'Read more',
-		parallax: 'cont-1.png'
+		parallax: 's09.png'
 	},
 	blog: {
 		title: 'Blog',
 		desc: "",
 		btn: 'Read more',
-		parallax: 'cont-1.png'
+		parallax: 's10.png'
 	}
 }};

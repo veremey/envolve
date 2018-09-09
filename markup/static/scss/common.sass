@@ -511,6 +511,17 @@ p
 		background-attachment: fixed
 		backface-visibility: hidden
 		background-size: cover
+	&__img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 100%
+		min-height: 100%
+		+r(1366)
+			min-width: 100%
+			width: auto
+			height: 100%
 
 .white-shadow
 	&:after
